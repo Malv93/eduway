@@ -1,9 +1,8 @@
+import Header from "./header";
 export default function Layout({ children, props }) {
   return (
     <>
-      <header>
-        <h2>This is the header</h2>
-      </header>
+      <Header />
       <main>{children}</main>
       <footer>
         <p>This is the footer</p>
