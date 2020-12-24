@@ -1,14 +1,17 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Layout from "../components/layout/layout";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>Eduway</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Eduway is the Way</h1>
-    </div>
+      <div>
+        <p>This is the main content:</p>
+        <h1>Eduway is the Way</h1>
+      </div>
+    </Layout>
   );
 }

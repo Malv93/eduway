@@ -17,3 +17,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Flex column Layout */
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  justify-content: space-between;
+}
