@@ -5,7 +5,7 @@ import styles from "../../styles/header.module.css";
 
 export default function Header() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+    <Navbar className={styles.navbar} variant="dark" expand="lg" sticky="top">
       <Navbar.Brand href="#home">
         <img
           className={styles.brand}

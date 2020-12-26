@@ -1,3 +1,7 @@
+.navbar {
+  background-color: var(--primary-color);
+}
+
 .brand {
-  height: 40px;
+  height: 2rem;
 }
