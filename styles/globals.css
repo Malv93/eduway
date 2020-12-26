@@ -46,3 +46,19 @@ a {
 main {
   flex: 1;
 }
+
+/* Section */
+.section {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.section-title {
+  color: var(--third-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.title {
+  color: var(--third-color);
+  margin-top: 40px;
+}

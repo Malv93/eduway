@@ -1,31 +1,51 @@
+/* Heading Section */
 .headingSection {
-  padding-top: 20px;
-  padding-bottom: 100px;
   color: var(--primary-color);
 }
-.title {
+.headingTitle {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 20px;
 }
-.subtitle {
+.headingSubtitle {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 100px;
 }
 
+/* Activities Section */
 .activitiesSection {
   background: var(--primary-color);
-  padding-top: 20px;
-  padding-bottom: 100px;
 }
 
 .activity {
   margin-top: 20px;
 }
 
-.sectionTitle {
-  color: var(--third-color);
-  font-size: 2rem;
-  font-weight: 600;
+.feature {
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+/* Methodology Section */
+
+.methodologyStep {
+  padding-bottom: 20px;
+}
+
+/* Mission Section */
+.missionSection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Team Section */
+.teamCard {
+  margin-top: 20px;
+}
+
+/* Action Section */
+.actionSection {
+  background-color: var(--primary-color);
+  color: #fff;
 }
