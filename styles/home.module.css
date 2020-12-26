@@ -1,9 +1,31 @@
-.heading {
+.headingSection {
   padding-top: 20px;
+  padding-bottom: 100px;
+  color: var(--primary-color);
 }
 .title {
+  font-size: 3rem;
   font-weight: 800;
+  margin-bottom: 20px;
 }
 .subtitle {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+.activitiesSection {
+  background: var(--primary-color);
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.activity {
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  color: var(--third-color);
+  font-size: 2rem;
+  font-weight: 600;
 }

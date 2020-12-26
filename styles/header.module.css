@@ -1,5 +1,6 @@
 .navbar {
   background-color: var(--primary-color);
+  border-bottom: #fff solid 3px;
 }
 
 .brand {
