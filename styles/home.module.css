@@ -1,6 +1,7 @@
 /* Heading Section */
 .headingSection {
   color: var(--primary-color);
+  height: calc(100vh - 60px); /*viewport minus navbar height*/
 }
 .headingTitle {
   font-size: 3rem;
@@ -10,7 +11,7 @@
 .headingSubtitle {
   font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 /* Activities Section */
