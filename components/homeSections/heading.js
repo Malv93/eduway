@@ -1,6 +1,8 @@
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/home.module.css";
 import ActionButtons from "../actionButtons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Heading() {
   return (
@@ -13,6 +15,7 @@ export default function Heading() {
         Podcast e l'empatia di un team giovane al servizio dei giovani.
       </h3>
       <ActionButtons />
+      <FontAwesomeIcon icon={faChevronDown} />
     </Container>
   );
 }
