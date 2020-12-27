@@ -2,17 +2,20 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import styles from "../../styles/header.module.css";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <Navbar className={styles.navbar} variant="dark" expand="lg" sticky="top">
-      <Navbar.Brand href="#home">
-        <img
-          className={styles.brand}
-          src="/images/brand.svg"
-          alt="Eduway, Pedagogia e Educazione, logo"
-        ></img>
-      </Navbar.Brand>
+      <Link href="/">
+        <Navbar.Brand>
+          <img
+            className={styles.brand}
+            src="/images/brand.svg"
+            alt="Eduway, Pedagogia e Educazione, logo"
+          ></img>
+        </Navbar.Brand>
+      </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

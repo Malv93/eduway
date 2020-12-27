@@ -2,6 +2,10 @@
 .headingSection {
   color: var(--primary-color);
   height: calc(100vh - 60px); /*viewport minus navbar height*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0;
 }
 .headingTitle {
   font-size: 3rem;
@@ -12,6 +16,10 @@
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 60px;
+}
+
+.scrollDown {
+  align-self: center;
 }
 
 /* Activities Section */

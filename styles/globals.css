@@ -38,8 +38,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-
-  justify-content: space-between;
 }
 
 /* Main content is fully extended */
@@ -50,7 +48,7 @@ main {
 /* Section */
 .section {
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 .section-title {
   color: var(--third-color);

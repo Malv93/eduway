@@ -30,6 +30,8 @@ export default function Activities() {
             </Card.Text>
           </Card.Body>
         </Card>
+      </Fade>
+      <Fade top>
         <div className={styles.featuresBox}>
           <h3 className="title">Features</h3>
 
