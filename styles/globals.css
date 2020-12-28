@@ -57,13 +57,7 @@ main {
 /* Navbar links expand vertically */
 .position-link-id {
   position: absolute;
-  top: -210px;
-}
-/* Navbar links are on a row */
-@media (min-width: 768px) {
-  .position-link-id {
-    top: -50px;
-  }
+  top: -50px;
 }
 .section-title {
   color: var(--third-color);
