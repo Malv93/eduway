@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import styles from "../../styles/home.module.css";
+import Fade from "react-reveal";
 
 const founders = [
   {
@@ -37,31 +38,29 @@ export default function Team() {
       <h2 className="section-title">Team</h2>
       {founders.map((founder) => {
         return (
-          <Card
-            key={founder.id}
-            bg="primary"
-            text="white"
-            className={styles.teamCard}
-          >
-            <Card.Header>{founder.name}</Card.Header>
-            <Card.Body>Co-Founder</Card.Body>
-          </Card>
+          <Fade top key={founder.id}>
+            <Card bg="primary" text="white" className={styles.teamCard}>
+              <Card.Header>{founder.name}</Card.Header>
+              <Card.Body>Co-Founder</Card.Body>
+            </Card>
+          </Fade>
         );
       })}
 
       <h3 className="title">Collaboratori</h3>
       {collaborators.map((collaborator) => {
         return (
-          <Card
-            key={collaborator.id}
-            bg="light"
-            text="dark"
-            border="primary"
-            className={styles.teamCard}
-          >
-            <Card.Header>{collaborator.name}</Card.Header>
-            <Card.Body>{collaborator.role}</Card.Body>
-          </Card>
+          <Fade top key={collaborator.id}>
+            <Card
+              bg="light"
+              text="dark"
+              border="primary"
+              className={styles.teamCard}
+            >
+              <Card.Header>{collaborator.name}</Card.Header>
+              <Card.Body>{collaborator.role}</Card.Body>
+            </Card>
+          </Fade>
         );
       })}
     </Container>
