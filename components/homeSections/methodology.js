@@ -33,11 +33,8 @@ const methodologySteps = [
 
 export default function Methodology() {
   return (
-    <Container
-      fluid
-      id="methodology"
-      className={`section ${styles.methodologySection}`}
-    >
+    <Container fluid className={`section ${styles.methodologySection}`}>
+      <div id="methodology" className="position-link-id"></div>
       <h2 className="section-title">Il Metodo Eduway</h2>
       <ol>
         {methodologySteps.map((step) => {

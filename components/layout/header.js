@@ -5,7 +5,13 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <Navbar className={styles.navbar} variant="dark" expand="lg" sticky="top">
+    <Navbar
+      className={styles.navbar}
+      collapseOnSelect
+      variant="dark"
+      expand="md"
+      sticky="top"
+    >
       <Link href="/">
         <Navbar.Brand>
           <img

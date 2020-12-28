@@ -49,6 +49,21 @@ main {
 .section {
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+}
+/* For navigation with id-links.
+   Avoid navbar covering content.   */
+
+/* Navbar links expand vertically */
+.position-link-id {
+  position: absolute;
+  top: -210px;
+}
+/* Navbar links are on a row */
+@media (min-width: 768px) {
+  .position-link-id {
+    top: -50px;
+  }
 }
 .section-title {
   color: var(--third-color);

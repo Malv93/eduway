@@ -32,11 +32,8 @@ const features = [
 
 export default function Activities() {
   return (
-    <Container
-      fluid
-      id="activities"
-      className={`section ${styles.activitiesSection}`}
-    >
+    <Container fluid className={`section ${styles.activitiesSection}`}>
+      <div id="activities" className="position-link-id"></div>
       <h2 className="section-title">Attività Principali</h2>
 
       {activities.map((activity) => {
