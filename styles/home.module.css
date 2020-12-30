@@ -1,7 +1,7 @@
 /* Heading Section */
 .headingSection {
   color: var(--primary-color);
-  height: calc(100vh - 60px); /*viewport minus navbar height*/
+  height: calc(100vh - 90px); /*viewport minus navbar height - SF bar*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,9 +48,6 @@
 }
 
 /* Team Section */
-.teamCard {
-  margin-top: 20px;
-}
 
 /* Action Section */
 .actionSection {

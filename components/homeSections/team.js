@@ -2,15 +2,18 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import styles from "../../styles/home.module.css";
 import Fade from "react-reveal";
+import FlipCard from "../flipCard";
 
 const founders = [
   {
     id: 1,
     name: "Andrea Dasti",
+    role: "Co-Founder",
   },
   {
     id: 2,
     name: "Stefano Lepre",
+    role: "Co-Founder",
   },
 ];
 
@@ -38,29 +41,23 @@ export default function Team() {
       <h2 className="section-title">Team</h2>
       {founders.map((founder) => {
         return (
-          <Fade top key={founder.id}>
-            <Card bg="primary" text="white" className={styles.teamCard}>
-              <Card.Header>{founder.name}</Card.Header>
-              <Card.Body>Co-Founder</Card.Body>
-            </Card>
-          </Fade>
+          <FlipCard
+            key={founder.id}
+            founder
+            name={founder.name}
+            role={founder.role}
+          />
         );
       })}
 
       <h3 className="title">Collaboratori</h3>
       {collaborators.map((collaborator) => {
         return (
-          <Fade top key={collaborator.id}>
-            <Card
-              bg="light"
-              text="dark"
-              border="primary"
-              className={styles.teamCard}
-            >
-              <Card.Header>{collaborator.name}</Card.Header>
-              <Card.Body>{collaborator.role}</Card.Body>
-            </Card>
-          </Fade>
+          <FlipCard
+            key={collaborator.id}
+            name={collaborator.name}
+            role={collaborator.role}
+          />
         );
       })}
     </Container>
