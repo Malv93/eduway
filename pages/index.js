@@ -6,6 +6,7 @@ import Methodology from "../components/homeSections/methodology";
 import Mission from "../components/homeSections/mission";
 import Team from "../components/homeSections/team";
 import Action from "../components/homeSections/action";
+import Podcast from "../components/homeSections/podcast";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Mission />
       <Team />
       <Action />
+      <Podcast />
     </Layout>
   );
 }
