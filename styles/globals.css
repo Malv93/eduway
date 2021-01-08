@@ -55,10 +55,18 @@ main {
    Avoid navbar covering content.   */
 
 /* Navbar links expand vertically */
+/* For expanded vertical navbar in small screens */
 .position-link-id {
   position: absolute;
-  top: -50px;
+  top: -220px;
 }
+/* For horizontal navbar in large screens */
+@media (min-width: 768px) {
+  .position-link-id {
+    top: -50px;
+  }
+}
+
 .section-title {
   color: var(--third-color);
   font-size: 2rem;

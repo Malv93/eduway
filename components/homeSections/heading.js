@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/home.module.css";
-import ActionButtons from "../actionButtons";
+import Button from "react-bootstrap/Button";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default function Heading() {
@@ -19,7 +19,14 @@ export default function Heading() {
           Podcast e l'empatia di un team giovane al servizio dei giovani.
         </h3>
       </div>
-      <ActionButtons />
+      <div className={styles.actionButtons}>
+        <Button variant="primary" block>
+          Play Podcast
+        </Button>
+        <Button variant="info" block>
+          Contattaci
+        </Button>
+      </div>
       <ExpandMoreIcon style={{ fontSize: 100 }} className={styles.scrollDown} />
     </Container>
   );

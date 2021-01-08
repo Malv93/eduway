@@ -13,7 +13,7 @@
   position: relative;
   transform-style: preserve-3d;
   transform-origin: center right;
-  transition: transform 1s cubic-bezier(0.5, 1, 0.89, 1); /*ease-out-quad*/
+  transition: transform 1500ms ease;
 }
 .card:focus {
   outline: none; /*Override button style*/
