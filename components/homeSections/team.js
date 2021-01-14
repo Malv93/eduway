@@ -1,7 +1,5 @@
 import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
-import styles from "../../styles/home.module.css";
-import Fade from "react-reveal";
+import styles from "../../styles/homeSections/team.module.css";
 import FlipCard from "../flipCard";
 
 const founders = [

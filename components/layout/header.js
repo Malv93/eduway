@@ -1,5 +1,6 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Button from "react-bootstrap/Button";
 import styles from "../../styles/header.module.css";
 import Link from "next/link";
 
@@ -21,6 +22,9 @@ export default function Header() {
           ></img>
         </Navbar.Brand>
       </Link>
+      <Button variant="outline-warning" className="ml-auto mr-3">
+        <i class="fas fa-podcast"></i>
+      </Button>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

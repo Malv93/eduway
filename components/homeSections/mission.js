@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-import styles from "../../styles/home.module.css";
+import styles from "../../styles/homeSections/mission.module.css";
 import Fade from "react-reveal/Fade";
 
 export default function Mission() {

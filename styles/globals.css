@@ -22,13 +22,23 @@ a {
   box-sizing: border-box;
 }
 
-/* Color Palette */
+/* Color Palettes */
+
+/* Old one */
 :root {
+  --primary-color: #253f60;
+  --secondary-color: #4895fa;
+  --third-color: #dfe1e7;
+  --fourth-color: #fabc48;
+}
+
+/* New one */
+/* :root {
   --primary-color: #215ead;
   --secondary-color: #4895fa;
   --third-color: #63a7ff;
   --fourth-color: #fabc48;
-}
+} */
 
 /* Flex column Layout */
 
@@ -47,8 +57,8 @@ main {
 
 /* Section */
 .section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
 }
 /* For navigation with id-links.
@@ -68,12 +78,12 @@ main {
 }
 
 .section-title {
-  color: var(--third-color);
+  color: var(--secondary-color);
   font-size: 2rem;
   font-weight: 600;
 }
 
 .title {
-  color: var(--third-color);
+  color: var(--secondary-color);
   margin-top: 40px;
 }

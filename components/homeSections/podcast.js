@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import styles from "../../styles/home.module.css";
 
 export default function Podcast() {
   useEffect(() => {
@@ -14,11 +13,7 @@ export default function Podcast() {
     };
   });
   return (
-    <Container
-      fluid
-      id="podcast"
-      className={`section ${styles.podcastSection}`}
-    >
+    <Container fluid id="podcast" className="section">
       <h2 className="section-title">Eduway the Podcast</h2>
       <a
         class="spreaker-player"

@@ -1,22 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import styles from "../../styles/home.module.css";
+import Button from "react-bootstrap/Button";
+import styles from "../../styles/homeSections/activities.module.css";
 import Fade from "react-reveal";
-
-const activities = [
-  {
-    id: 1,
-    heading: "Podcast",
-    title: "Eduway The Podcast",
-    description: "Breve descrizione ed immagine del podcast",
-  },
-  {
-    id: 2,
-    heading: "Accompagnamento Pedagogico",
-    title: "Collaborazione F.o.c.r.",
-    description: "Breve descrizione ed immagine F.o.c.r.",
-  },
-];
 
 const features = [
   {
@@ -32,25 +18,62 @@ const features = [
 
 export default function Activities() {
   return (
-    <Container fluid className={`section ${styles.activitiesSection}`}>
+    <Container fluid className={`section ${styles.section}`}>
       <div id="activities" className="position-link-id"></div>
+      {/* Main activities sub-section */}
       <h2 className="section-title">Attività Principali</h2>
 
-      {activities.map((activity) => {
-        return (
-          <Fade top key={activity.id}>
-            <Card bg="primary" text="white" className={styles.activity}>
-              <Card.Header>{activity.heading}</Card.Header>
-              <Card.Body>
-                <Card.Title>{activity.title}</Card.Title>
-                <Card.Text>
-                  <p>{activity.description}</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Fade>
-        );
-      })}
+      <div className={styles.activityCard}>
+        <img
+          src="images/activities/podcast.png"
+          alt="Eduway The Podcast logo episodio"
+          className={`${styles.activityImage} ${styles.podcastImage}`}
+        />
+        <h3 className={styles.activityTitle}>Eduway The Podcast</h3>
+        <p>
+          Raccontiamo l'EDUCAZIONE con professionalità e leggerezza! Nuovi
+          episodi ogni lunedì, mercoledì e venerdì con 3 formati diversi.
+        </p>
+        <p>
+          Puoi ascoltare il podcast sul nostro sito o sulla tua piattaforma
+          preferita.
+        </p>
+        <Button
+          variant="warning"
+          className={`${styles.buttonFont} ${styles.activityPodcastButton}`}
+        >
+          Ascolta il Podcast
+        </Button>
+        <div className={styles.podcastPlatformsRow}>
+          <Button variant="outline-primary">
+            <i class="fab fa-spotify"></i>
+          </Button>
+          <Button variant="outline-primary">Spr</Button>
+          <Button variant="outline-primary">
+            <i class="fab fa-google"></i>
+          </Button>
+          <Button variant="outline-primary">
+            <i class="fab fa-itunes-note"></i>
+          </Button>
+        </div>
+      </div>
+      <div className={styles.activityCard}>
+        <img
+          src="images/activities/focr.svg"
+          alt="Fondazione Oratori Cremonesi Focr logo"
+          className={styles.activityImage}
+        />
+        <h3>Accompagnamento Pedagogico</h3>
+        <p>
+          Attività di Accompagnamento Pedagogico presso comunità della provincia
+          di Cremona e collaborazione con F.O.C.r.
+        </p>
+        <Button variant="info" className={styles.buttonFont}>
+          Contattaci
+        </Button>
+      </div>
+
+      {/* Features sub-section */}
       <div className={styles.featuresBox}>
         <h3 className="title">Features</h3>
         {features.map((feature) => {

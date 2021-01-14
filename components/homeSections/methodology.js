@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import styles from "../../styles/home.module.css";
+import styles from "../../styles/homeSections/methodology.module.css";
 import Fade from "react-reveal";
 
 const methodologySteps = [
