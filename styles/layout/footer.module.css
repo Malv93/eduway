@@ -3,6 +3,6 @@
   flex-direction: column;
   align-items: center;
   color: #fff;
-  background-color: var(--third-color);
+  background-color: var(--secondary-color);
   padding-top: 20px;
 }

@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/homeSections/heading.module.css";
 import Button from "react-bootstrap/Button";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default function Heading() {
   return (
@@ -14,15 +13,14 @@ export default function Heading() {
         Eduway offre la migliore esperienza Educativa: solide competenze,
         Podcast e l'empatia di un team giovane al servizio dei giovani.
       </h3>
-      <div>
-        <Button variant="warning" block className={styles.button}>
+      <div className={styles.buttonsBox}>
+        <Button variant="warning" block className="button-font">
           Ascolta il Podcast
         </Button>
-        <Button variant="info" block className={styles.button}>
+        <Button variant="info" block className="button-font">
           Contattaci
         </Button>
       </div>
-      <ExpandMoreIcon style={{ fontSize: 100 }} className={styles.scrollDown} />
     </Container>
   );
 }

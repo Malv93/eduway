@@ -1,0 +1,11 @@
+.featureCard {
+  max-width: 200px;
+  text-align: center;
+}
+
+.featureImage {
+  object-fit: contain;
+  max-height: 80px;
+  max-width: 80px;
+  margin-bottom: 20px;
+}

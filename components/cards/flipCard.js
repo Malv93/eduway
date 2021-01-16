@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
-import styles from "../styles/flipCard.module.css";
+import styles from "../../styles/cards/flipCard.module.css";
 
 export default function FlipCard(props) {
   const [isFlipped, setIsFlipped] = useState(false);

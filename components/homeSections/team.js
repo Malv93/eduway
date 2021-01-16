@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/homeSections/team.module.css";
-import FlipCard from "../flipCard";
+import FlipCard from "../cards/flipCard";
 
 const founders = [
   {

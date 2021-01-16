@@ -1,20 +1,7 @@
 import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import styles from "../../styles/homeSections/activities.module.css";
-import Fade from "react-reveal";
-
-const features = [
-  {
-    id: 1,
-  },
-  {
-    id: 2,
-  },
-  {
-    id: 3,
-  },
-];
+import FeatureCard from "../cards/featureCard";
 
 export default function Activities() {
   return (
@@ -40,7 +27,7 @@ export default function Activities() {
         </p>
         <Button
           variant="warning"
-          className={`${styles.buttonFont} ${styles.activityPodcastButton}`}
+          className={`button-font ${styles.activityPodcastButton}`}
         >
           Ascolta il Podcast
         </Button>
@@ -63,32 +50,37 @@ export default function Activities() {
           alt="Fondazione Oratori Cremonesi Focr logo"
           className={styles.activityImage}
         />
-        <h3>Accompagnamento Pedagogico</h3>
+        <h3 className={styles.activityTitle}>Accompagnamento Pedagogico</h3>
         <p>
           Attività di Accompagnamento Pedagogico presso comunità della provincia
           di Cremona e collaborazione con F.O.C.r.
         </p>
-        <Button variant="info" className={styles.buttonFont}>
+        <Button variant="info" className="button-font">
           Contattaci
         </Button>
       </div>
 
       {/* Features sub-section */}
+      <h3 className="title">Features</h3>
       <div className={styles.featuresBox}>
-        <h3 className="title">Features</h3>
-        {features.map((feature) => {
-          return (
-            <Fade top key={feature.id}>
-              <Card bg="secondary" text="white" className={styles.feature}>
-                <Card.Header>Feature {feature.id}</Card.Header>
-                <Card.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod
-                </Card.Body>
-              </Card>
-            </Fade>
-          );
-        })}
+        <FeatureCard
+          imageSource="images/features/microphone.svg"
+          imageAlt="Microfono"
+          title="Microfono"
+          description="Diffondiamo buone prassi educative con leggerezza e professionalità"
+        />
+        <FeatureCard
+          imageSource="images/features/people.svg"
+          imageAlt="Persone"
+          title="Persone"
+          description="Accompagniamo realtà educative partendo dai bisogni delle persone"
+        />
+        <FeatureCard
+          imageSource="images/features/web.svg"
+          imageAlt="Rete"
+          title="Rete"
+          description="Facciamo rete per aumentare il beneficio che portiamo nella realtà"
+        />
       </div>
     </Container>
   );

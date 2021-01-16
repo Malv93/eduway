@@ -1,5 +1,24 @@
 /* Methodology Section */
+.methodologyList {
+  list-style-type: none;
+  padding: 0 10px;
+  margin: 40px 0;
+}
 
-.methodologyStep {
-  padding-bottom: 20px;
+.methodologyList > li:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+/*Component: stepItem*/
+
+.number {
+  color: var(--fourth-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.stepImage {
+  max-width: 80px;
+  max-height: 80px;
+  margin-left: 20px;
 }

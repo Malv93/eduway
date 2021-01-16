@@ -1,7 +1,7 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
-import styles from "../../styles/header.module.css";
+import styles from "../../styles/layout/header.module.css";
 import Link from "next/link";
 
 export default function Header() {
