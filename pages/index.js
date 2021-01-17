@@ -1,17 +1,16 @@
 import Head from "next/head";
 import Layout from "../components/layout/layout";
-import Heading from "../components/homeSections/heading";
-import Activities from "../components/homeSections/activities";
-import Methodology from "../components/homeSections/methodology";
-import About from "../components/homeSections/about";
-import Action from "../components/homeSections/action";
-import Podcast from "../components/homeSections/podcast";
+import Heading from "../components/home/heading";
+import Activities from "../components/home/activities";
+import Methodology from "../components/home/methodology";
+import About from "../components/home/about";
+import Action from "../components/home/action";
 
 export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Eduway</title>
+        <title>Eduway Impresa Sociale | Podcast, Educazione e Pedagogia</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Heading />
@@ -19,7 +18,6 @@ export default function Home() {
       <Methodology />
       <About />
       <Action />
-      <Podcast />
     </Layout>
   );
 }

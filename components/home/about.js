@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-import styles from "../../styles/homeSections/about.module.css";
+import styles from "../../styles/home/about.module.css";
 import FlipCard from "../cards/flipCard";
 import Mission from "./mission";
 

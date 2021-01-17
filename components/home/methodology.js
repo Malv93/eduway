@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import styles from "../../styles/homeSections/methodology.module.css";
+import styles from "../../styles/home/methodology.module.css";
 
 const steps = [
   {

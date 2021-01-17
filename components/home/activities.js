@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import styles from "../../styles/homeSections/activities.module.css";
+import styles from "../../styles/home/activities.module.css";
 import FeatureCard from "../cards/featureCard";
 
 export default function Activities() {

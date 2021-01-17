@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import ContactForm from "../forms/contactForm";
-import styles from "../../styles/homeSections/action.module.css";
+import styles from "../../styles/home/action.module.css";
 
 export default function Action() {
   return (

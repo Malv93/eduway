@@ -22,18 +22,20 @@ export default function Header() {
           ></img>
         </Navbar.Brand>
       </Link>
-      <Button variant="outline-warning" className="ml-auto mr-3">
-        <i class="fas fa-podcast"></i>
-      </Button>
+      <Link href="/podcast">
+        <Button variant="outline-warning" className="ml-auto mr-3">
+          <i class="fas fa-podcast"></i>
+        </Button>
+      </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Link href="/">
             <Nav.Link href="/">Home</Nav.Link>
           </Link>
-          <Nav.Link href="#activities">Attività</Nav.Link>
-          <Nav.Link href="#methodology">Metodo</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="/#activities">Attività</Nav.Link>
+          <Nav.Link href="/#methodology">Metodo</Nav.Link>
+          <Nav.Link href="/#about">About</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-import styles from "../../styles/homeSections/heading.module.css";
+import styles from "../../styles/home/heading.module.css";
 import Button from "react-bootstrap/Button";
 
 export default function Heading() {
