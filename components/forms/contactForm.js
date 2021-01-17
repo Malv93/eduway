@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Button from "react-bootstrap/Button";
+import Alert from "react-bootstrap/Alert";
 import styles from "../../styles/forms/contactForm.module.css";
 
 export default function ContactForm() {
   const [status, setStatus] = useState({ error: false, msg: null });
-  const [username, setUsername] = useState("");
 
   const handleResponse = (status, msg) => {
     if (status === 200) {
@@ -17,22 +17,10 @@ export default function ContactForm() {
     console.log(msg);
   };
 
-  const capitalizeName = (name) => {
-    const firstLetter = name.slice(0, 1).toUpperCase();
-    const restOfName = name.slice(1, name.length).toLowerCase();
-    return firstLetter + restOfName;
-  };
-
   return (
     <Formik
-      initialValues={{ firstName: "", lastName: "", email: "", message: "" }}
+      initialValues={{ email: "", message: "" }}
       validationSchema={Yup.object({
-        firstName: Yup.string()
-          .max(15, "Massimo 15 caratteri")
-          .required("Campo obbligatorio"),
-        lastName: Yup.string()
-          .max(20, "Massimo 20 caratteri")
-          .required("Campo obbligatorio"),
         email: Yup.string()
           .email("Indirizzo Email non valido")
           .max(60, "Indirizzo Email troppo lungo...")
@@ -62,47 +50,6 @@ export default function ContactForm() {
     >
       {(props) => (
         <Form className={styles.formContainer}>
-          <div className="form-row">
-            <div className="col-md-6">
-              <div className="form-group">
-                <label htmlFor="firstName">Nome</label>
-                <Field
-                  className={
-                    "form-control" +
-                    " " +
-                    (props.errors.firstName &&
-                      props.touched.firstName &&
-                      styles.errorField)
-                  }
-                  name="firstName"
-                  type="text"
-                />
-                <div className="text-danger">
-                  <ErrorMessage name="firstName" />
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6">
-              <div className="form-group">
-                <label htmlFor="lastName">Cognome</label>
-                <Field
-                  className={
-                    "form-control" +
-                    " " +
-                    (props.errors.lastName &&
-                      props.touched.lastName &&
-                      styles.errorField)
-                  }
-                  name="lastName"
-                  type="text"
-                />
-                <div className="text-danger">
-                  <ErrorMessage name="lastName" />
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="form-group">
             <label htmlFor="email">Indirizzo Email</label>
             <Field
@@ -148,45 +95,20 @@ export default function ContactForm() {
             Invia
           </Button>
           {status.error && (
-            <div
-              className={
-                "alert alert-danger alert-dismissible fade show" +
-                " " +
-                styles.messageSent
-              }
-              role="alert"
-            >
-              <h4>{status.msg}</h4>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="alert"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+            <Alert variant="danger" className={styles.messageSent} role="alert">
+              <Alert.Heading>{status.msg}</Alert.Heading>
+            </Alert>
           )}
           {!status.error && status.msg && (
-            <div
-              className={
-                "alert alert-success alert-dismissible fade show" +
-                " " +
-                styles.messageSent
-              }
+            <Alert
+              variant="success"
+              className={styles.messageSent}
               role="alert"
             >
-              <h4>Grazie {capitalizeName(username)}! </h4> <hr />
-              <p>Il messaggio è stato inviato correttamente.</p>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="alert"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+              <Alert.Heading>Grazie per averci contattato!</Alert.Heading>
+              <hr />
+              <p>Ti risponderemo il prima possibile.</p>
+            </Alert>
           )}
         </Form>
       )}
