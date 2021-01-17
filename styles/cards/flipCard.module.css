@@ -1,8 +1,16 @@
 .scene {
-  width: 300px;
-  height: 200px;
+  border-radius: 100%;
   perspective: 600px;
-  margin-top: 20px;
+  margin: 0 auto 20px;
+}
+/*Assign a dimension to the .scene*/
+.founder {
+  width: 200px;
+  height: 200px;
+}
+.collaborator {
+  width: 120px;
+  height: 120px;
 }
 
 .card {
@@ -10,6 +18,7 @@
   border: none;
   width: 100%;
   height: 100%;
+  border-radius: 100%;
   position: relative;
   transform-style: preserve-3d;
   transform-origin: center right;
@@ -22,6 +31,8 @@
 .cardFace {
   width: 100%;
   height: 100%;
+  border-radius: 100%;
+  border: solid 3px #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -30,8 +41,24 @@
 
 .cardFaceBack {
   transform: rotateY(180deg);
+  background-color: var(--third-color);
+  box-shadow: inset 0 0 30px 10px #ccc;
 }
 
 .card.isFlipped {
   transform: translateX(-100%) rotateY(-180deg);
+}
+
+.profileImage {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.profileBio {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  padding: 25px 20px;
+  overflow: hidden;
 }

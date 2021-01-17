@@ -3,8 +3,7 @@ import Layout from "../components/layout/layout";
 import Heading from "../components/homeSections/heading";
 import Activities from "../components/homeSections/activities";
 import Methodology from "../components/homeSections/methodology";
-import Mission from "../components/homeSections/mission";
-import Team from "../components/homeSections/team";
+import About from "../components/homeSections/about";
 import Action from "../components/homeSections/action";
 import Podcast from "../components/homeSections/podcast";
 
@@ -18,8 +17,7 @@ export default function Home() {
       <Heading />
       <Activities />
       <Methodology />
-      <Mission />
-      <Team />
+      <About />
       <Action />
       <Podcast />
     </Layout>

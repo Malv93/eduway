@@ -1,4 +1,8 @@
 /* Methodology Section */
+.section {
+  padding-bottom: 120px;
+}
+
 .methodologyList {
   list-style-type: none;
   padding: 0 10px;

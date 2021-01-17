@@ -1,5 +1,13 @@
 /* Mission Section */
-.missionSection {
-  background-color: var(--primary-color);
-  color: #fff;
+.section {
+  max-width: 80%;
+  position: relative;
+  bottom: 60px;
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 2px #222, inset 0 0 0 3px var(--fourth-color),
+    inset 0 0 30px 1px #ddd;
+  padding: 10px 20px;
+  text-align: center;
 }

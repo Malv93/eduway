@@ -43,7 +43,7 @@ const steps = [
 
 export default function Methodology() {
   return (
-    <Container fluid className={`section ${styles.methodologySection}`}>
+    <Container fluid className={`section ${styles.section}`}>
       <div id="methodology" className="position-link-id"></div>
       <h2 className="section-title">Il Metodo Eduway</h2>
       <ol className={styles.methodologyList}>

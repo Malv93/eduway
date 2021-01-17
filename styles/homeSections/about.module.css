@@ -1,0 +1,30 @@
+/* Team Section */
+
+.section {
+  position: relative;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.eduwayBio {
+  max-width: 90%;
+  font-size: 1.1rem;
+}
+
+.foundersSection {
+  padding: 60px 0;
+}
+.foundersSection > div:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.collaboratorsSection {
+  padding: 60px 0;
+}
+.collaboratorsSection > div:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.profileBox {
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.formContainer {
+  text-align: left;
+  max-width: 700px;
+}
+
+.textarea {
+  min-height: 200px;
+  max-height: 600px;
+}
+
+.sendButton {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.messageSent {
+  margin: 1rem 0;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.errorField {
+  box-shadow: 0 0 3pt 2pt #dc3545;
+}
