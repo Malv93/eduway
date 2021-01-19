@@ -4,8 +4,12 @@
   background: var(--primary-color);
   padding-bottom: 100px;
   height: calc(
-    100vh - 50px
+    100vh + 100px
   ); /*viewport minus navbar height minus smartphone bottom navigation commands*/
+  /*Add px becouse of reveal animation of following contents*/
+  padding-top: 40px;
+  padding-bottom: 260px; /*padding for reveal animation*/
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

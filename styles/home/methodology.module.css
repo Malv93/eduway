@@ -9,7 +9,7 @@
   margin: 40px 0;
 }
 
-.methodologyList > li:not(:last-child) {
+.methodologyList li:not(:last-child) {
   margin-bottom: 60px;
 }
 

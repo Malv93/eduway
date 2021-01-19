@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styles from "../../styles/home/methodology.module.css";
+import Fade from "react-reveal/Fade";
 
 const steps = [
   {
@@ -45,27 +46,31 @@ export default function Methodology() {
   return (
     <Container fluid className={`section ${styles.section}`}>
       <div id="methodology" className="position-link-id"></div>
-      <h2 className="section-title">Il Metodo Eduway</h2>
+      <Fade bottom>
+        <h2 className="section-title">Il Metodo Eduway</h2>
+      </Fade>
       <ol className={styles.methodologyList}>
-        {steps.map((step) => {
-          return (
-            <li key={step.id} className={styles.stepItem}>
-              <p className={styles.number}>Step. {step.id}</p>
-              <Row classname={styles.stepBox}>
-                <Col xs={4}>
-                  <img
-                    src={step.imageSource}
-                    alt={step.imageAlt}
-                    className={styles.stepImage}
-                  ></img>
-                </Col>
-                <Col xs={8}>
-                  <h5>{step.title}</h5>
-                </Col>
-              </Row>
-            </li>
-          );
-        })}
+        <Fade bottom>
+          {steps.map((step) => {
+            return (
+              <li key={step.id} className={styles.stepItem}>
+                <p className={styles.number}>Step. {step.id}</p>
+                <Row classname={styles.stepBox}>
+                  <Col xs={4}>
+                    <img
+                      src={step.imageSource}
+                      alt={step.imageAlt}
+                      className={styles.stepImage}
+                    ></img>
+                  </Col>
+                  <Col xs={8}>
+                    <h5>{step.title}</h5>
+                  </Col>
+                </Row>
+              </li>
+            );
+          })}
+        </Fade>
       </ol>
     </Container>
   );
