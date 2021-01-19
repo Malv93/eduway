@@ -95,14 +95,12 @@ export default function Activities() {
             title="Microfono"
             description="Diffondiamo buone prassi educative con leggerezza e professionalità"
           />
-
           <FeatureCard
             imageSource="images/features/people.svg"
             imageAlt="Persone"
             title="Persone"
             description="Accompagniamo realtà educative partendo dai bisogni delle persone"
           />
-
           <FeatureCard
             imageSource="images/features/web.svg"
             imageAlt="Rete"

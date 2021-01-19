@@ -48,16 +48,33 @@ export default function Podcast() {
           ></a>
         </div>
         <div className={styles.platformsRow}>
-          <Button variant="outline-light">
-            <i class="fab fa-spotify"></i>
-          </Button>
-          <Button variant="outline-light">Spr</Button>
-          <Button variant="outline-light">
-            <i class="fab fa-google"></i>
-          </Button>
-          <Button variant="outline-light">
-            <i class="fab fa-itunes-note"></i>
-          </Button>
+          <a
+            href="https://open.spotify.com/show/0YVXCXiDZL6X5eJfff2Pdi?si=REXuIRcAQ0WFPLoQiRuyLw"
+            target="_blank"
+          >
+            <Button variant="outline-light">
+              <i class="fab fa-spotify"></i>
+            </Button>
+          </a>
+          <a
+            href="https://www.spreaker.com/show/eduway-the-podcast"
+            target="_blank"
+          >
+            <Button variant="outline-light">Spr</Button>
+          </a>
+          <a
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
+            target="_blank"
+          >
+            <Button variant="outline-light">
+              <i class="fab fa-google"></i>
+            </Button>
+          </a>
+          <a href="https://music.apple.com/it/browse" target="_blank">
+            <Button variant="outline-light">
+              <i class="fab fa-itunes-note"></i>
+            </Button>
+          </a>
         </div>
       </Container>
       <Container fluid className={`section ${styles.season1}`}>
@@ -84,16 +101,33 @@ export default function Podcast() {
           ></a>
         </div>
         <div className={styles.platformsRow}>
-          <Button variant="outline-primary">
-            <i class="fab fa-spotify"></i>
-          </Button>
-          <Button variant="outline-primary">Spr</Button>
-          <Button variant="outline-primary">
-            <i class="fab fa-google"></i>
-          </Button>
-          <Button variant="outline-primary">
-            <i class="fab fa-itunes-note"></i>
-          </Button>
+          <a
+            href="https://open.spotify.com/show/0YVXCXiDZL6X5eJfff2Pdi?si=REXuIRcAQ0WFPLoQiRuyLw"
+            target="_blank"
+          >
+            <Button variant="outline-primary">
+              <i class="fab fa-spotify"></i>
+            </Button>
+          </a>
+          <a
+            href="https://www.spreaker.com/show/eduway-the-podcast"
+            target="_blank"
+          >
+            <Button variant="outline-primary">Spr</Button>
+          </a>
+          <a
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
+            target="_blank"
+          >
+            <Button variant="outline-primary">
+              <i class="fab fa-google"></i>
+            </Button>
+          </a>
+          <a href="https://music.apple.com/it/browse" target="_blank">
+            <Button variant="outline-primary">
+              <i class="fab fa-itunes-note"></i>
+            </Button>
+          </a>
         </div>
       </Container>
     </Layout>
