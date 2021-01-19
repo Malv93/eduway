@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/home/heading.module.css";
 import Button from "react-bootstrap/Button";
+import Link from "next/link";
 
 export default function Heading() {
   return (
@@ -14,12 +15,16 @@ export default function Heading() {
         Podcast e l'empatia di un team giovane al servizio dei giovani.
       </h3>
       <div className={styles.buttonsBox}>
-        <Button variant="warning" block className="button-font">
-          Ascolta il Podcast
-        </Button>
-        <Button variant="info" block className="button-font">
-          Contattaci
-        </Button>
+        <Link href="/podcast">
+          <Button variant="warning" block className="button-font">
+            <i class="fas fa-podcast"></i> Ascolta il Podcast
+          </Button>
+        </Link>
+        <Link href="/#contact-form">
+          <Button variant="info" block className="button-font">
+            <i class="far fa-envelope"></i> Contattaci
+          </Button>
+        </Link>
       </div>
     </Container>
   );

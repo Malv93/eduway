@@ -1,1 +1,30 @@
 /* Podcast page styles */
+
+.season2 {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.podcastTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.seasonTitle {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.player {
+  box-shadow: 5px 5px 15px 2px #222;
+  background-color: #fff; /*bottom of the player looks transparent*/
+}
+
+.platformsRow {
+  margin: 30px auto 0;
+  max-width: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

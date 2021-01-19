@@ -1,8 +1,20 @@
 .box {
+  background-color: var(--third-color);
+  padding: 40px 20px 20px;
+}
+
+.socialRow {
+  width: 180px;
+  margin: 20px auto 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  background-color: var(--secondary-color);
-  padding-top: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.horizontalRow {
+  border: 1px solid var(--primary-color);
+}
+
+.copyright {
+  text-align: center;
 }

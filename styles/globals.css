@@ -73,7 +73,7 @@ main {
 /* For expanded vertical navbar in small screens */
 .position-link-id {
   position: absolute;
-  top: -230px;
+  top: -270px;
 }
 /* For horizontal navbar in large screens */
 @media (min-width: 768px) {

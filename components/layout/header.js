@@ -36,6 +36,7 @@ export default function Header() {
           <Nav.Link href="/#activities">Attività</Nav.Link>
           <Nav.Link href="/#methodology">Metodo</Nav.Link>
           <Nav.Link href="/#about">About</Nav.Link>
+          <Nav.Link href="/#contacts">Contatti</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

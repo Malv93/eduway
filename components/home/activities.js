@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import styles from "../../styles/home/activities.module.css";
 import FeatureCard from "../cards/featureCard";
+import Link from "next/link";
 
 export default function Activities() {
   return (
@@ -25,23 +26,42 @@ export default function Activities() {
           Puoi ascoltare il podcast sul nostro sito o sulla tua piattaforma
           preferita.
         </p>
-        <Button
-          variant="warning"
-          className={`button-font ${styles.activityPodcastButton}`}
-        >
-          Ascolta il Podcast
-        </Button>
+        <Link href="/podcast">
+          <Button
+            variant="warning"
+            className={`button-font ${styles.activityPodcastButton}`}
+          >
+            <i class="fas fa-podcast"></i> Ascolta il Podcast
+          </Button>
+        </Link>
         <div className={styles.podcastPlatformsRow}>
-          <Button variant="outline-primary">
-            <i class="fab fa-spotify"></i>
-          </Button>
-          <Button variant="outline-primary">Spr</Button>
-          <Button variant="outline-primary">
-            <i class="fab fa-google"></i>
-          </Button>
-          <Button variant="outline-primary">
-            <i class="fab fa-itunes-note"></i>
-          </Button>
+          <a
+            href="https://open.spotify.com/show/0YVXCXiDZL6X5eJfff2Pdi?si=REXuIRcAQ0WFPLoQiRuyLw"
+            target="_blank"
+          >
+            <Button variant="outline-primary">
+              <i class="fab fa-spotify"></i>
+            </Button>
+          </a>
+          <a
+            href="https://www.spreaker.com/show/eduway-the-podcast"
+            target="_blank"
+          >
+            <Button variant="outline-primary">Spr</Button>
+          </a>
+          <a
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
+            target="_blank"
+          >
+            <Button variant="outline-primary">
+              <i class="fab fa-google"></i>
+            </Button>
+          </a>
+          <a href="https://music.apple.com/it/browse" target="_blank">
+            <Button variant="outline-primary">
+              <i class="fab fa-itunes-note"></i>
+            </Button>
+          </a>
         </div>
       </div>
       <div className={styles.activityCard}>
@@ -55,9 +75,11 @@ export default function Activities() {
           Attività di Accompagnamento Pedagogico presso comunità della provincia
           di Cremona e collaborazione con F.O.C.r.
         </p>
-        <Button variant="info" className="button-font">
-          Contattaci
-        </Button>
+        <Link href="/#contact-form">
+          <Button variant="info" className="button-font">
+            <i class="far fa-envelope"></i> Contattaci
+          </Button>
+        </Link>
       </div>
 
       {/* Features sub-section */}
