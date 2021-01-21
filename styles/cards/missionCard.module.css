@@ -3,6 +3,7 @@
   max-width: 80%;
   position: relative;
   bottom: 60px;
+  margin-bottom: 20px;
   background-color: #fff;
   color: var(--primary-color);
   border-radius: 20px;

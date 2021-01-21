@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 
 export default function Activities() {
   return (
-    <Container fluid>
+    <Container fluid className={styles.section}>
       <div id="activities" className="position-link-id"></div>
       {/* Main activities sub-section */}
 
@@ -69,8 +69,8 @@ export default function Activities() {
       <Fade bottom>
         <div className={styles.activityCard}>
           <img
-            src="images/activities/focr.svg"
-            alt="Fondazione Oratori Cremonesi Focr logo"
+            src="images/activities/metodo.svg"
+            alt="Accompagnamento Pedagogico Eduway"
             className={styles.activityImage}
           />
           <h3 className={styles.activityTitle}>Accompagnamento Pedagogico</h3>

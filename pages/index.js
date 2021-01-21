@@ -2,9 +2,9 @@ import Head from "next/head";
 import Layout from "../components/layout/layout";
 import Heading from "../components/home/heading";
 import Activities from "../components/home/activities";
-import Methodology from "../components/home/methodology";
 import About from "../components/home/about";
 import Action from "../components/home/action";
+import Partners from "../components/home/partners";
 
 export default function Home() {
   return (
@@ -15,9 +15,9 @@ export default function Home() {
       </Head>
       <Heading />
       <Activities />
-      <Methodology />
       <About />
       <Action />
+      <Partners />
     </Layout>
   );
 }

@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/home/about.module.css";
 import FlipCard from "../cards/flipCard";
-import Mission from "./mission";
+import MissionCard from "../cards/missionCard";
 import Fade from "react-reveal/Fade";
 
 const founders = [
@@ -59,9 +59,17 @@ export default function About() {
   return (
     <Container fluid id="team" className={styles.section}>
       <Fade bottom>
-        <Mission>
+        <MissionCard
+          title="Mission"
+          description="Portare beneficio alle persone attraverso
+        l’educazione"
+        >
           <div id="about" className="position-link-id"></div>
-        </Mission>
+        </MissionCard>
+        <MissionCard
+          title="Vision"
+          description="Migliorare il mondo con l'educazione"
+        ></MissionCard>
         <h2 className="section-title">Chi siamo</h2>
         <div className={styles.eduwayBio}>
           <p>
