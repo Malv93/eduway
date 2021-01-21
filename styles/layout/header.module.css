@@ -7,3 +7,16 @@
   height: 2rem;
   cursor: pointer;
 }
+
+.podcastRight {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .podcastRight {
+    display: initial;
+  }
+  .podcastLeft {
+    display: none;
+  }
+}

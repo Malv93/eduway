@@ -73,12 +73,43 @@ main {
 /* For expanded vertical navbar in small screens */
 .position-link-id {
   position: absolute;
-  top: -270px;
+  top: -240px;
 }
 /* For horizontal navbar in large screens */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .position-link-id {
     top: -70px;
+  }
+}
+
+/*limit the content width for large screens*/
+.inner-section {
+  max-width: 1000px;
+  padding: 0;
+}
+/*Add lateral padding for larger screens*/
+@media (min-width: 576px) {
+  .inner-section {
+    padding: 0 30px;
+  }
+}
+
+/*Main title of the page*/
+.page-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 30px 0 40px;
+}
+
+@media (min-width: 576px) {
+  .page-title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 4.5rem;
   }
 }
 

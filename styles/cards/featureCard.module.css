@@ -5,7 +5,7 @@
 
 .featureImage {
   object-fit: contain;
-  max-height: 80px;
+  height: 70px;
   max-width: 80px;
   margin-bottom: 20px;
 }

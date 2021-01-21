@@ -1,4 +1,6 @@
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import styles from "../../styles/home/about.module.css";
 import FlipCard from "../cards/flipCard";
 import MissionCard from "../cards/missionCard";
@@ -58,73 +60,91 @@ const collaborators = [
 export default function About() {
   return (
     <Container fluid id="team" className={styles.section}>
-      <Fade bottom>
-        <MissionCard
-          title="Mission"
-          description="Portare beneficio alle persone attraverso
+      <Container fluid className="inner-section">
+        <Row>
+          <Col lg={6}>
+            <Fade bottom>
+              <MissionCard
+                title="Mission"
+                description="Portare beneficio alle persone attraverso
         l’educazione"
-        >
-          <div id="about" className="position-link-id"></div>
-        </MissionCard>
-        <MissionCard
-          title="Vision"
-          description="Migliorare il mondo con l'educazione"
-        ></MissionCard>
-        <h2 className="section-title">Chi siamo</h2>
-        <div className={styles.eduwayBio}>
-          <p>
-            Eduway nasce in una fredda sera invernale, dall'incontro fortuito in
-            un bar di Crema tra Andrea Dasti e Stefano Lepre, due amici che
-            vogliono affrontare le sfide dell'educazione. Eduway si propone di
-            fare questo e quello... in modo da ottenere questo e quello...
-            facendo attenzione a quello e quell'altro... con l'obiettivo di
-            crescere ed espandere le sue attività dedicandosi a nuove sfide e
-            progetti importanti per la comunità.{" "}
-          </p>
-        </div>
-      </Fade>
-      <div className={styles.foundersSection}>
+              >
+                <div id="about" className="position-link-id"></div>
+              </MissionCard>
+            </Fade>
+          </Col>
+          <Col lg={6}>
+            <Fade bottom>
+              <MissionCard
+                title="Vision"
+                description="Migliorare il mondo con l'educazione"
+              ></MissionCard>
+            </Fade>
+          </Col>
+        </Row>
         <Fade bottom>
+          <h2 className="section-title">Chi siamo</h2>
+          <div className={styles.eduwayBio}>
+            <p>
+              Eduway nasce in una fredda sera invernale, dall'incontro fortuito
+              in un bar di Crema tra Andrea Dasti e Stefano Lepre, due amici che
+              vogliono affrontare le sfide dell'educazione. Eduway si propone di
+              fare questo e quello... in modo da ottenere questo e quello...
+              facendo attenzione a quello e quell'altro... con l'obiettivo di
+              crescere ed espandere le sue attività dedicandosi a nuove sfide e
+              progetti importanti per la comunità.{" "}
+            </p>
+          </div>
+        </Fade>
+        <Row className={styles.foundersSection}>
           {founders.map((founder) => {
             return (
-              <div key={founder.id} className={styles.profileBox}>
-                <FlipCard
-                  name={founder.name}
-                  role={founder.role}
-                  imageSource={founder.imageSource}
-                  imageAlt={founder.imageAlt}
-                  bio={founder.bio}
-                  founder
-                />
-                <h5>{founder.name}</h5>
-                <p>{founder.role}</p>
-              </div>
+              <Col lg={6} key={founder.id}>
+                <Fade bottom>
+                  <div className={styles.profileBox}>
+                    <FlipCard
+                      name={founder.name}
+                      role={founder.role}
+                      imageSource={founder.imageSource}
+                      imageAlt={founder.imageAlt}
+                      bio={founder.bio}
+                      founder
+                    />
+                    <h5>{founder.name}</h5>
+                    <p>{founder.role}</p>
+                  </div>
+                </Fade>
+              </Col>
             );
           })}
-        </Fade>
-      </div>
-      <Fade bottom>
-        <h3 className="title">Collaborano con noi</h3>
-      </Fade>
-      <div className={styles.collaboratorsSection}>
+        </Row>
         <Fade bottom>
+          <h3 className={`title ${styles.collaboratorsTitle}`}>
+            Collaborano con noi
+          </h3>
+        </Fade>
+        <Row className={styles.collaboratorsSection}>
           {collaborators.map((collaborator) => {
             return (
-              <div key={collaborator.id} className={styles.profileBox}>
-                <FlipCard
-                  name={collaborator.name}
-                  role={collaborator.role}
-                  imageSource={collaborator.imageSource}
-                  imageAlt={collaborator.imageAlt}
-                  bio={collaborator.bio}
-                />
-                <h5>{collaborator.name}</h5>
-                <p>{collaborator.role}</p>
-              </div>
+              <Col lg={4}>
+                <Fade bottom>
+                  <div key={collaborator.id} className={styles.profileBox}>
+                    <FlipCard
+                      name={collaborator.name}
+                      role={collaborator.role}
+                      imageSource={collaborator.imageSource}
+                      imageAlt={collaborator.imageAlt}
+                      bio={collaborator.bio}
+                    />
+                    <h5>{collaborator.name}</h5>
+                    <p>{collaborator.role}</p>
+                  </div>
+                </Fade>
+              </Col>
             );
           })}
-        </Fade>
-      </div>
+        </Row>
+      </Container>
     </Container>
   );
 }

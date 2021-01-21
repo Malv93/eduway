@@ -2,25 +2,33 @@
 .section {
   color: #fff;
   background: var(--primary-color);
-  padding-bottom: 100px;
-  height: calc(
-    100vh + 100px
-  ); /*viewport minus navbar height minus smartphone bottom navigation commands*/
-  /*Add px becouse of reveal animation of following contents*/
+}
+
+.innerSection {
   padding-top: 40px;
   padding-bottom: 260px; /*padding for reveal animation*/
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
-.title {
-  font-size: 3rem;
-  font-weight: 800;
-  margin: 30px 0 0;
-}
+
 .subtitle {
   font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+.button {
+  margin-bottom: 20px;
+  display: block;
+  width: 100%; /*similar to block button*/
+}
+
+@media (min-width: 576px) {
+  .subtitle {
+    font-size: 1.4rem;
+    max-width: 500px;
+  }
+  /*still block buttons, but not full-width*/
+  .button {
+    width: initial; /*remove width: 100% */
+    font-size: 1.2rem;
+  }
 }

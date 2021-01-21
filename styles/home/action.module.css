@@ -1,9 +1,22 @@
 /* Action Section */
-.section {
+
+.podcastButton {
+  margin: 40px 0;
+  display: block;
+  width: 100%; /*similar to block button*/
+}
+
+@media (min-width: 576px) {
+  /*still block buttons, but not full-width*/
+  .podcastButton {
+    width: initial; /*remove width: 100% */
+    font-size: 1.2rem;
+  }
 }
 
 .formBox {
-  margin: 20px 0 60px;
+  max-width: 700px;
+  margin: 0 0 60px;
   border-radius: 10px;
   padding: 20px 10px;
   color: var(--primary-color);
@@ -11,6 +24,7 @@
   position: relative;
 }
 
+/*nav link, from activity card, not from collapsed navbar*/
 .linkFromButton {
   position: absolute;
   top: -70px;

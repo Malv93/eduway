@@ -7,28 +7,33 @@ import Pulse from "react-reveal/Pulse";
 export default function Heading() {
   return (
     <Container fluid id="heading" className={styles.section}>
-      <Pulse>
-        <h1 className={styles.title}>
-          <div>L'Educazione</div>è la Via<div></div>
-        </h1>
+      <Container className={`inner-section ${styles.innerSection}`}>
+        <Pulse>
+          <h1 className="page-title">
+            <div>L'Educazione</div>è la Via<div></div>
+          </h1>
 
-        <h3 className={styles.subtitle}>
-          Eduway offre la migliore esperienza Educativa: solide competenze,
-          Podcast e l'empatia di un team giovane al servizio dei giovani.
-        </h3>
-        <div className={styles.buttonsBox}>
-          <Link href="/podcast">
-            <Button variant="warning" block className="button-font">
-              <i class="fas fa-podcast"></i> Ascolta il Podcast
-            </Button>
-          </Link>
-          <Link href="/#contact-form">
-            <Button variant="info" block className="button-font">
-              <i class="far fa-envelope"></i> Contattaci
-            </Button>
-          </Link>
-        </div>
-      </Pulse>
+          <h3 className={styles.subtitle}>
+            Eduway offre la migliore esperienza Educativa: solide competenze,
+            Podcast e l'empatia di un team giovane al servizio dei giovani.
+          </h3>
+          <div className={styles.buttonsBox}>
+            <Link href="/podcast">
+              <Button
+                variant="warning"
+                className={`button-font ${styles.button}`}
+              >
+                <i class="fas fa-podcast"></i> Ascolta il Podcast
+              </Button>
+            </Link>
+            <Link href="/#contact-form">
+              <Button variant="info" className={`button-font ${styles.button}`}>
+                <i class="far fa-envelope"></i> Contattaci
+              </Button>
+            </Link>
+          </div>
+        </Pulse>
+      </Container>
     </Container>
   );
 }
