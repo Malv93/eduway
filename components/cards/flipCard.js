@@ -13,9 +13,18 @@ export default function FlipCard(props) {
     >
       <button
         className={
-          styles.card + " " + (isFlipped ? styles.isFlipped : undefined)
+          styles.card +
+          " " +
+          (isFlipped
+            ? props.founder
+              ? styles.isFlippedFounder
+              : styles.isFlippedCollaborator
+            : undefined)
         }
-        onClick={() => setIsFlipped(!isFlipped)}
+        onClick={() => {
+          setIsFlipped(!isFlipped);
+          /* TODO: After # seconds flips back the card. Pay attention to multiple clicks and to remove additional timers. Also may be necessary to limit interaction at beginning of animation (or can't be clicked during animation).*/
+        }}
       >
         <div className={`${styles.cardFace} ${styles.cardFaceFront}`}>
           <img
@@ -25,7 +34,13 @@ export default function FlipCard(props) {
           ></img>
         </div>
         <div className={`${styles.cardFace} ${styles.cardFaceBack}`}>
-          <div className={styles.profileBio}>
+          <div
+            className={
+              styles.profileBio +
+              " " +
+              (props.founder ? styles.founder : styles.collaborator)
+            }
+          >
             <p>{props.bio}</p>
           </div>
         </div>

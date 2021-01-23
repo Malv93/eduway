@@ -126,9 +126,9 @@ export default function About() {
         <Row className={styles.collaboratorsSection}>
           {collaborators.map((collaborator) => {
             return (
-              <Col lg={4}>
+              <Col lg={4} key={collaborator.id}>
                 <Fade bottom>
-                  <div key={collaborator.id} className={styles.profileBox}>
+                  <div className={styles.profileBox}>
                     <FlipCard
                       name={collaborator.name}
                       role={collaborator.role}
