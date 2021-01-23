@@ -38,6 +38,55 @@ a {
   --fourth-color: #fabc48;
 }
 
+/*Custom colors for bootstrap buttons*/
+/* I have to use !important in order to override all bootstrap selectors, indipendently from their specificity */
+/* Blue navy */
+.bluenavy-button {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+.bluenavy-button:hover,
+.bluenavy-button:active,
+.bluenavy-button:focus {
+  background-color: #1a2e49 !important;
+}
+.bluenavy-button:active,
+.bluenavy-button:focus {
+  box-shadow: 0 0 0 3px #1a2e497a !important;
+}
+/* Blue navy outline variant */
+.bluenavy-button-outline {
+  color: var(--primary-color) !important;
+  background-color: transparent !important;
+  border-color: var(--primary-color) !important;
+}
+.bluenavy-button-outline:hover,
+.bluenavy-button-outline:active,
+.bluenavy-button-outline:focus {
+  color: #fff !important;
+  background-color: var(--primary-color) !important;
+}
+.bluenavy-button-outline:active,
+.bluenavy-button-outline:focus {
+  background-color: #1a2e49 !important;
+  box-shadow: 0 0 0 3px #1a2e497a !important;
+}
+/* Grey lightblue */
+.greylightblue-button {
+  color: var(--primary-color) !important;
+  background-color: var(--third-color) !important;
+  border-color: var(--third-color) !important;
+}
+.greylightblue-button:hover,
+.greylightblue-button:active,
+.greylightblue-button:focus {
+  background-color: #c4cad8 !important;
+}
+.greylightblue-button:active,
+.greylightblue-button:focus {
+  box-shadow: 0 0 0 3px #dfe1e77a !important;
+}
+
 /* Flex column Layout */
 
 /* __next is the id of the div which wraps the App */

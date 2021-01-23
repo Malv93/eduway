@@ -45,7 +45,7 @@ export default function Activities() {
                     href="https://open.spotify.com/show/0YVXCXiDZL6X5eJfff2Pdi?si=REXuIRcAQ0WFPLoQiRuyLw"
                     target="_blank"
                   >
-                    <Button variant="outline-primary">
+                    <Button className="bluenavy-button-outline">
                       <i class="fab fa-spotify"></i>
                     </Button>
                   </a>
@@ -53,18 +53,18 @@ export default function Activities() {
                     href="https://www.spreaker.com/show/eduway-the-podcast"
                     target="_blank"
                   >
-                    <Button variant="outline-primary">Spr</Button>
+                    <Button className="bluenavy-button-outline">Spr</Button>
                   </a>
                   <a
                     href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
                     target="_blank"
                   >
-                    <Button variant="outline-primary">
+                    <Button className="bluenavy-button-outline">
                       <i class="fab fa-google"></i>
                     </Button>
                   </a>
                   <a href="https://music.apple.com/it/browse" target="_blank">
-                    <Button variant="outline-primary">
+                    <Button className="bluenavy-button-outline">
                       <i class="fab fa-itunes-note"></i>
                     </Button>
                   </a>
@@ -88,7 +88,7 @@ export default function Activities() {
                   provincia di Cremona e collaborazione con F.O.C.r.
                 </p>
                 <Link href="/#contact-form">
-                  <Button variant="info" className="button-font">
+                  <Button className="greylightblue-button">
                     <i class="far fa-envelope"></i> Contattaci
                   </Button>
                 </Link>

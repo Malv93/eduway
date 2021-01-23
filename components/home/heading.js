@@ -27,7 +27,7 @@ export default function Heading() {
               </Button>
             </Link>
             <Link href="/#contact-form">
-              <Button variant="info" className={`button-font ${styles.button}`}>
+              <Button className={`greylightblue-button ${styles.button}`}>
                 <i class="far fa-envelope"></i> Contattaci
               </Button>
             </Link>

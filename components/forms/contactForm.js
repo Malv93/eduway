@@ -88,9 +88,8 @@ export default function ContactForm() {
           </div>
           <Button
             type="submit"
-            variant="primary"
             block
-            className={"button-font" + " " + styles.sendButton}
+            className={"bluenavy-button" + " " + styles.sendButton}
           >
             Invia
           </Button>
