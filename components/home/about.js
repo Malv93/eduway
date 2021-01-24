@@ -59,7 +59,7 @@ const collaborators = [
 
 export default function About() {
   return (
-    <Container fluid id="team" className={styles.section}>
+    <Container fluid id="team" className={`section ${styles.section}`}>
       <Container fluid className="inner-section">
         <Row>
           <Col lg={6}>
@@ -119,9 +119,7 @@ export default function About() {
           })}
         </Row>
         <Fade bottom>
-          <h3 className={`title ${styles.collaboratorsTitle}`}>
-            Collaborano con noi
-          </h3>
+          <h3 className={styles.collaboratorsTitle}>Collaborano con noi</h3>
         </Fade>
         <Row className={styles.collaboratorsSection}>
           {collaborators.map((collaborator) => {
@@ -145,6 +143,15 @@ export default function About() {
           })}
         </Row>
       </Container>
+      {/* Bottom tilted header */}
+      <svg
+        className="svg-tilted-header white"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon points="0,100 100,0 100,100" />
+      </svg>
     </Container>
   );
 }

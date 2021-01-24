@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 
 export default function Activities() {
   return (
-    <Container fluid className={styles.section}>
+    <Container fluid className={`section ${styles.section}`}>
       <Container fluid className="inner-section">
         {/* Main activities sub-section */}
         <Row>
@@ -131,6 +131,15 @@ export default function Activities() {
           </Col>
         </Row>
       </Container>
+      {/* Bottom tilted header */}
+      <svg
+        className="svg-tilted-header bluenavy"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon points="0,100 100,0 100,100" />
+      </svg>
     </Container>
   );
 }

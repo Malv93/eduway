@@ -1,4 +1,7 @@
 /* Action Section */
+.section {
+  padding-top: 40px;
+}
 
 .podcastButton {
   margin: 40px 0;

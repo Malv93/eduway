@@ -6,7 +6,7 @@ import Pulse from "react-reveal/Pulse";
 
 export default function Heading() {
   return (
-    <Container fluid id="heading" className={styles.section}>
+    <Container fluid id="heading" className={`section ${styles.section}`}>
       <Container className={`inner-section ${styles.innerSection}`}>
         <Pulse>
           <h1 className="page-title">
@@ -34,6 +34,15 @@ export default function Heading() {
           </div>
         </Pulse>
       </Container>
+      {/* Bottom tilted header */}
+      <svg
+        className="svg-tilted-header white"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon points="0,100 100,0 100,100" />
+      </svg>
     </Container>
   );
 }

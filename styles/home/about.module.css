@@ -1,9 +1,9 @@
 /* Team Section */
 
 .section {
-  position: relative;
   background-color: var(--primary-color);
   color: #fff;
+  padding-bottom: 200px;
 }
 
 .mission {

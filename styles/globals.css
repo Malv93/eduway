@@ -103,9 +103,9 @@ main {
 }
 
 /* Section */
+/*remove padding of Container, allow absolute positioning*/
 .section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 0;
   position: relative;
 }
 /* For navigation with id-links.
@@ -127,7 +127,7 @@ main {
 /*limit the content width for large screens*/
 .inner-section {
   max-width: 1000px;
-  padding: 0;
+  padding: 0 10px;
 }
 /*Add lateral padding for larger screens*/
 @media (min-width: 576px) {
@@ -161,6 +161,17 @@ main {
   margin-bottom: 20px;
 }
 
-.title {
-  margin-top: 40px;
+/*Bottom tilted header*/
+.svg-tilted-header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20vw; /*angle does not change with screen size*/
+  max-height: 320px;
+}
+.white polygon {
+  fill: #fff;
+}
+.bluenavy polygon {
+  fill: var(--primary-color);
 }
