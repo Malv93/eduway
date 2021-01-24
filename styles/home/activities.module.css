@@ -7,6 +7,11 @@
   position: relative;
   bottom: 100px;
   max-width: 360px;
+  height: 610px; /*hard coded fixed size for all cards*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 30px 10px;
   margin: 0 auto 60px;
   text-align: center;
@@ -18,12 +23,13 @@
 
 .activityImage {
   object-fit: contain;
-  max-width: 220px;
+  max-width: 280px;
   margin: 0 auto 20px;
 }
 
 .podcastImage {
   border-radius: 10px;
+  max-width: 220px;
 }
 
 .activityTitle {
@@ -32,7 +38,7 @@
 
 .podcastPlatformsRow {
   margin: 20px auto 0;
-  max-width: 240px;
+  width: 240px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
