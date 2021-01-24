@@ -1,14 +1,17 @@
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/home/mission.module.css";
+import Fade from "react-reveal/Fade";
 
 export default function Vision() {
   return (
     <Container fluid className={`section ${styles.section} ${styles.vision}`}>
       <Container fluid className="inner-section">
-        <div className={styles.missionBox}>
-          <h2 className="section-title">Vision</h2>
-          <p>Migliorare il mondo con l'educazione</p>
-        </div>
+        <Fade bottom>
+          <div className={styles.missionBox}>
+            <h2 className="section-title">Vision</h2>
+            <p>Migliorare il mondo con l'educazione</p>
+          </div>
+        </Fade>
       </Container>
       {/* Bottom tilted header */}
       <svg
