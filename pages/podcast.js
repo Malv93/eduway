@@ -25,7 +25,10 @@ export default function Podcast() {
         <title>Eduway the Podcast | Podcast, Educazione e Pedagogia</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container fluid className={`section ${styles.season2}`}>
+      <Container
+        fluid
+        className={`section ${styles.section} ${styles.season2}`}
+      >
         <Container className="inner-section">
           <Pulse>
             <h1 className="page-title">
@@ -86,8 +89,20 @@ export default function Podcast() {
             </a>
           </div>
         </Container>
+        {/* Bottom tilted header */}
+        <svg
+          className="svg-tilted-header white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon points="0,100 100,0 100,100" />
+        </svg>
       </Container>
-      <Container fluid className={`section ${styles.season1}`}>
+      <Container
+        fluid
+        className={`section ${styles.section} ${styles.season1}`}
+      >
         <Container className="inner-section">
           <h2 className={styles.seasonTitle}>Stagione 1</h2>
           <div className={styles.player}>

@@ -175,3 +175,9 @@ main {
 .bluenavy polygon {
   fill: var(--primary-color);
 }
+.greylightblue polygon {
+  fill: var(--third-color);
+}
+.yellow polygon {
+  fill: var(--fourth-color);
+}

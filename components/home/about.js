@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styles from "../../styles/home/about.module.css";
 import FlipCard from "../cards/flipCard";
-import MissionCard from "../cards/missionCard";
 import Fade from "react-reveal/Fade";
 
 const founders = [
@@ -61,27 +60,6 @@ export default function About() {
   return (
     <Container fluid id="team" className={`section ${styles.section}`}>
       <Container fluid className="inner-section">
-        <Row>
-          <Col lg={6}>
-            <Fade bottom>
-              <MissionCard
-                title="Mission"
-                description="Portare beneficio alle persone attraverso
-        l’educazione"
-              >
-                <div id="about" className="position-link-id"></div>
-              </MissionCard>
-            </Fade>
-          </Col>
-          <Col lg={6}>
-            <Fade bottom>
-              <MissionCard
-                title="Vision"
-                description="Migliorare il mondo con l'educazione"
-              ></MissionCard>
-            </Fade>
-          </Col>
-        </Row>
         <Fade bottom>
           <h2 className="section-title">Chi siamo</h2>
           <div className={styles.eduwayBio}>

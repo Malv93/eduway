@@ -7,7 +7,7 @@ import Pulse from "react-reveal/Pulse";
 export default function Heading() {
   return (
     <Container fluid id="heading" className={`section ${styles.section}`}>
-      <Container className={`inner-section ${styles.innerSection}`}>
+      <Container className="inner-section">
         <Pulse>
           <h1 className="page-title">
             <div>L'Educazione</div>è la Via<div></div>

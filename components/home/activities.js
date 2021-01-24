@@ -133,7 +133,7 @@ export default function Activities() {
       </Container>
       {/* Bottom tilted header */}
       <svg
-        className="svg-tilted-header bluenavy"
+        className="svg-tilted-header yellow"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"

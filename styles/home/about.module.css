@@ -3,6 +3,7 @@
 .section {
   background-color: var(--primary-color);
   color: #fff;
+  padding-top: 100px;
   padding-bottom: 200px;
 }
 
