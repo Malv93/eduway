@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import styles from "../styles/podcast.module.css";
 import Button from "react-bootstrap/Button";
 import Pulse from "react-reveal/Pulse";
-import Fade from "react-reveal/Fade";
+import SpreakerButton from "../components/buttons/spreakerButton";
 
 export default function Podcast() {
   useEffect(() => {
@@ -68,12 +68,7 @@ export default function Podcast() {
                 <i class="fab fa-spotify"></i>
               </Button>
             </a>
-            <a
-              href="https://www.spreaker.com/show/eduway-the-podcast"
-              target="_blank"
-            >
-              <Button variant="outline-light">Spr</Button>
-            </a>
+            <SpreakerButton />
             <a
               href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
               target="_blank"
@@ -135,12 +130,7 @@ export default function Podcast() {
                 <i class="fab fa-spotify"></i>
               </Button>
             </a>
-            <a
-              href="https://www.spreaker.com/show/eduway-the-podcast"
-              target="_blank"
-            >
-              <Button className="bluenavy-button-outline">Spr</Button>
-            </a>
+            <SpreakerButton bluenavy />
             <a
               href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
               target="_blank"

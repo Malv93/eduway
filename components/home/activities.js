@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";
+import SpreakerButton from "../buttons/spreakerButton";
 
 export default function Activities() {
   return (
@@ -49,12 +50,7 @@ export default function Activities() {
                       <i class="fab fa-spotify"></i>
                     </Button>
                   </a>
-                  <a
-                    href="https://www.spreaker.com/show/eduway-the-podcast"
-                    target="_blank"
-                  >
-                    <Button className="bluenavy-button-outline">Spr</Button>
-                  </a>
+                  <SpreakerButton bluenavy />
                   <a
                     href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
                     target="_blank"

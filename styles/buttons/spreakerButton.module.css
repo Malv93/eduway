@@ -1,0 +1,17 @@
+.spreakerLogo {
+  height: 1.2rem;
+}
+
+.bluenavy polygon {
+  fill: var(--primary-color);
+}
+.light polygon {
+  fill: #fff;
+}
+
+.bluenavy.active polygon {
+  fill: #fff;
+}
+.light.active polygon {
+  fill: var(--primary-color);
+}
