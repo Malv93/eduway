@@ -15,7 +15,7 @@ export default function Header() {
       sticky="top"
     >
       <Container fluid className="inner-section">
-        <Link href="/">
+        <a href="/">
           <Navbar.Brand>
             <img
               className={styles.brand}
@@ -23,34 +23,26 @@ export default function Header() {
               alt="Eduway, Pedagogia e Educazione, logo"
             ></img>
           </Navbar.Brand>
-        </Link>
-        <Link href="/podcast">
-          <Button
-            variant="outline-warning"
-            className={`ml-auto mr-3 button-font ${styles.podcastLeft}`}
-          >
+        </a>
+        <a href="/podcast" className="ml-auto mr-3 ">
+          <Button variant="outline-warning" className={styles.podcastLeft}>
             <i class="fas fa-podcast"></i> <span>Podcast</span>
           </Button>
-        </Link>
+        </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Link href="/">
-              <Nav.Link href="/">Home</Nav.Link>
-            </Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/#activities">Attività</Nav.Link>
             <Nav.Link href="/#about">About</Nav.Link>
             <Nav.Link href="/#contacts">Contatti</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Link href="/podcast">
-          <Button
-            variant="outline-warning"
-            className={`ml-2 button-font ${styles.podcastRight}`}
-          >
+        <a href="/podcast" className="ml-2 button-font">
+          <Button variant="outline-warning" className={styles.podcastRight}>
             <i class="fas fa-podcast"></i> <span>Podcast</span>
           </Button>
-        </Link>
+        </a>
       </Container>
     </Navbar>
   );

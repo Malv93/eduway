@@ -59,7 +59,10 @@ export default function Activities() {
                       <i class="fab fa-google"></i>
                     </Button>
                   </a>
-                  <a href="https://music.apple.com/it/browse" target="_blank">
+                  <a
+                    href="https://podcasts.apple.com/us/podcast/eduway-the-podcast/id1542016656?uo=4"
+                    target="_blank"
+                  >
                     <Button className="bluenavy-button-outline">
                       <i class="fab fa-itunes-note"></i>
                     </Button>
