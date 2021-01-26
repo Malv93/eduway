@@ -1,18 +1,32 @@
-/* ensure all pages have Bootstrap CSS */
-@import "~bootstrap/dist/css/bootstrap.min.css";
-
 /* Import fonts */
 /* Gotham from my assets*/
 @font-face {
   font-family: "Gotham";
-  src: local("Gotham Light"), local("Gotham-Light"); /*First look at local files*/
-  src: url("/public/fonts/gotham/Gotham-Light.eot");
-  src: url("/public/fonts/gotham/Gotham-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("/public/fonts/gotham/Gotham-Light.woff2") format("woff2"),
-    url("/public/fonts/gotham/Gotham-Light.woff") format("woff"),
-    url("/public/fonts/gotham/Gotham-Light.ttf") format("truetype");
+  src: local("Gotham Bold"), local("Gotham-Bold");
+  src: url("../public/fonts/gotham/Gotham-Bold.woff2") format("woff2"),
+    url("../public/fonts/gotham/Gotham-Bold.woff") format("woff"),
+    url("../public/fonts/gotham/Gotham-Bold.ttf") format("truetype");
+  font-weight: 800;
 }
+@font-face {
+  font-family: "Gotham";
+  src: local("Gotham Medium"), local("Gotham-Medium");
+  src: url("../public/fonts/gotham/Gotham-Medium.woff2") format("woff2"),
+    url("../public/fonts/gotham/Gotham-Medium.woff") format("woff"),
+    url("../public/fonts/gotham/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: local("Gotham Book"), local("Gotham-Book");
+  src: url("../public/fonts/gotham/Gotham-Book.woff2") format("woff2"),
+    url("../public/fonts/gotham/Gotham-Book.woff") format("woff"),
+    url("../public/fonts/gotham/Gotham-Book.ttf") format("truetype");
+}
+
+/* ensure all pages have Bootstrap CSS */
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 /* Global style settings */
 html,
@@ -33,6 +47,17 @@ a:hover {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 800; /*Gotham Bold*/
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600; /*Gotham Medium*/
 }
 
 /* Color Palettes */
@@ -145,7 +170,7 @@ main {
 /*Main title of the page*/
 .page-title {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 800; /*Gotham Bold = 800*/
   margin: 30px 0 40px;
 }
 
@@ -163,7 +188,7 @@ main {
 
 .section-title {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 600; /*Gotham Medium = 600*/
   margin-bottom: 20px;
 }
 
