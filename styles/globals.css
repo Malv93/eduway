@@ -5,9 +5,9 @@
 /* Gotham from my assets*/
 @font-face {
   font-family: "Gotham";
-  src: url("/public/fonts/gotham/Gotham-Light.woff2"),
-    url("/public/fonts/gotham/Gotham-Light.woff"),
-    url("/public/fonts/gotham/Gotham-Light.ttf");
+  src: url("/public/fonts/gotham/Gotham-Light.woff2") format("woff2"),
+    url("/public/fonts/gotham/Gotham-Light.woff") format("woff"),
+    url("/public/fonts/gotham/Gotham-Light.ttf") format("truetype");
 }
 
 /* Global style settings */
