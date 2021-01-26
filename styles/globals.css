@@ -5,7 +5,11 @@
 /* Gotham from my assets*/
 @font-face {
   font-family: "Gotham";
-  src: url("/public/fonts/gotham/Gotham-Light.woff2") format("woff2"),
+  src: local("Gotham Light"), local("Gotham-Light"); /*First look at local files*/
+  src: url("/public/fonts/gotham/Gotham-Light.eot");
+  src: url("/public/fonts/gotham/Gotham-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/fonts/gotham/Gotham-Light.woff2") format("woff2"),
     url("/public/fonts/gotham/Gotham-Light.woff") format("woff"),
     url("/public/fonts/gotham/Gotham-Light.ttf") format("truetype");
 }
