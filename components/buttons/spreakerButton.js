@@ -3,35 +3,15 @@ import styles from "../../styles/buttons/spreakerButton.module.css";
 import Button from "react-bootstrap/Button";
 
 export default function SpreakerButton(props) {
-  const [isActive, setIsActive] = useState(false);
-
-  const activate = (event) => {
-    setIsActive(true);
-    console.log(event.type);
-  };
-  const deactivate = (event) => {
-    setIsActive(false);
-    console.log(event.type);
-  };
-
   return (
     <a href="https://www.spreaker.com/show/eduway-the-podcast" target="_blank">
       <Button
-        onMouseEnter={activate}
-        onMouseLeave={deactivate}
-        onFocus={activate}
-        onBlur={deactivate}
         variant="outline-light" /*it is overridden by className if bluenavy is true */
         className={props.bluenavy && "bluenavy-button-outline"}
       >
+        {/* Home-made Spreaker Icon with a Polygon */}
         <svg
-          className={
-            styles.spreakerLogo +
-            " " +
-            (props.bluenavy ? styles.bluenavy : styles.light) +
-            " " +
-            (isActive && styles.active)
-          }
+          className={styles.spreakerLogo}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 96 100"
         >

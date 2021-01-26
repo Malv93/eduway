@@ -1,17 +1,5 @@
 .spreakerLogo {
   height: 1.2rem;
-}
-
-.bluenavy polygon {
-  fill: var(--primary-color);
-}
-.light polygon {
-  fill: #fff;
-}
-
-.bluenavy.active polygon {
-  fill: #fff;
-}
-.light.active polygon {
-  fill: var(--primary-color);
+  /*Sets fill equal to the color property, which is set by the button*/
+  fill: currentColor;
 }
