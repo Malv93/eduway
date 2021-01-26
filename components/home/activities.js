@@ -4,7 +4,6 @@ import styles from "../../styles/home/activities.module.css";
 import FeatureCard from "../cards/featureCard";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import SpreakerButton from "../buttons/spreakerButton";
 
@@ -33,14 +32,14 @@ export default function Activities() {
                   Puoi ascoltare il podcast sul nostro sito o sulla tua
                   piattaforma preferita.
                 </p>
-                <Link href="/podcast">
+                <a href="/podcast">
                   <Button
                     variant="warning"
                     className={`button-font ${styles.activityPodcastButton}`}
                   >
                     <i class="fas fa-podcast"></i> Ascolta il Podcast
                   </Button>
-                </Link>
+                </a>
                 <div className={styles.podcastPlatformsRow}>
                   <a
                     href="https://open.spotify.com/show/0YVXCXiDZL6X5eJfff2Pdi?si=REXuIRcAQ0WFPLoQiRuyLw"
@@ -86,11 +85,11 @@ export default function Activities() {
                   Attività di Accompagnamento Pedagogico presso comunità della
                   provincia di Cremona e collaborazione con F.O.C.r.
                 </p>
-                <Link href="/#contact-form">
+                <a href="/#contact-form">
                   <Button className="greylightblue-button">
                     <i class="far fa-envelope"></i> Contattaci
                   </Button>
-                </Link>
+                </a>
               </div>
             </Fade>
           </Col>

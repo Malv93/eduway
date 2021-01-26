@@ -9,11 +9,13 @@ export default function Partners() {
         <Fade bottom>
           <h2 className={`section-title ${styles.partnersTitle}`}>Partners</h2>
           <div className={styles.partnersRow}>
-            <img
-              src="images/partners/focr.svg"
-              alt="Fondazione Oratori Cremonesi Focr logo"
-              className={styles.logo}
-            />
+            <a href="https://www.focr.it" target="_blank">
+              <img
+                src="images/partners/focr.svg"
+                alt="Fondazione Oratori Cremonesi Focr"
+                className={styles.logo}
+              />
+            </a>
           </div>
         </Fade>
       </Container>

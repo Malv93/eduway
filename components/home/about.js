@@ -58,10 +58,11 @@ const collaborators = [
 
 export default function About() {
   return (
-    <Container fluid id="team" className={`section ${styles.section}`}>
+    <Container fluid className={`section ${styles.section}`}>
       <Container fluid className="inner-section">
         <Fade bottom>
           <h2 className="section-title">Chi siamo</h2>
+          <div id="about" className="position-link-id"></div>
           <div className={styles.eduwayBio}>
             <p>
               Eduway nasce in una fredda sera invernale, dall'incontro fortuito

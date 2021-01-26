@@ -3,7 +3,6 @@ import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/layout/header.module.css";
-import Link from "next/link";
 
 export default function Header() {
   return (
