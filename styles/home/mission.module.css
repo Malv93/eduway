@@ -1,6 +1,6 @@
 .section {
   padding-top: 40px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 .section.mission {
   color: #fff;
@@ -12,25 +12,16 @@
 }
 
 .missionBox {
+  position: relative;
+  bottom: 6vw; /*Move up for larger screens*/
   max-width: 360px;
   margin: 0 auto;
+  z-index: 1;
 }
+
 .missionBox h2 {
   font-size: 2.6rem;
 }
 .missionBox p {
   font-size: 1.4rem;
-}
-
-/*Try to keep mission Box vertically centered for large screens*/
-@media (min-width: 768px) {
-  .section {
-    padding-top: 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .section {
-    padding-bottom: 180px;
-  }
 }
