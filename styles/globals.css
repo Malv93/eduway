@@ -195,7 +195,7 @@ main {
 /*Bottom tilted header*/
 .svg-tilted-header {
   position: absolute;
-  bottom: -0.5px; /*Avoids the bottom line of different color, now covered by the svg*/
+  bottom: -1px; /*Avoids the bottom line of different color, now covered by the svg*/
   width: 100%;
   height: 20vw; /*angle does not change with screen size*/
   max-height: 320px; /*Put a limit for very very large screens*/

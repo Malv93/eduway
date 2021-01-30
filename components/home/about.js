@@ -129,7 +129,7 @@ export default function About() {
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
       >
-        <polygon points="0,100 100,0 100,100" />
+        <polygon points="0,98 100,0 100,100 0,100" />
       </svg>
     </Container>
   );
