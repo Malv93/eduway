@@ -36,14 +36,6 @@
   margin-bottom: 20px;
 }
 
-.podcastPlatformsRow {
-  margin: 20px auto 0;
-  width: 240px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .featuresBox div {
   margin: 0 auto 40px;
 }

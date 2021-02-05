@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import ContactForm from "../forms/contactForm";
 import styles from "../../styles/home/action.module.css";
 import Pulse from "react-reveal/Pulse";
+import Link from "next/link";
 
 export default function Action() {
   return (
@@ -10,11 +11,14 @@ export default function Action() {
       <Container fluid className="inner-section">
         <Pulse>
           <h2 className="section-title">Prova Eduway!</h2>
-          <a href="/podcast">
+          <Link href="/podcast">
             <Button variant="warning" block className={styles.podcastButton}>
-              <i class="fas fa-podcast"></i> Ascolta il Podcast
+              <svg className="icon icon-podcast">
+                <use xlinkHref="/images/icons/sprite.svg#icon-podcast"></use>
+              </svg>
+              Ascolta il Podcast
             </Button>
-          </a>
+          </Link>
 
           <Container className={styles.formBox}>
             <div id="contact-form" className={styles.linkFromButton}></div>

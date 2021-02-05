@@ -3,9 +3,8 @@ import { useEffect } from "react";
 import Layout from "../components/layout/layout";
 import Container from "react-bootstrap/Container";
 import styles from "../styles/podcast.module.css";
-import Button from "react-bootstrap/Button";
 import Pulse from "react-reveal/Pulse";
-import SpreakerButton from "../components/buttons/spreakerButton";
+import PodcastButtonsRow from "../components/buttons/podcastButtonsRow";
 
 export default function Podcast() {
   useEffect(() => {
@@ -27,7 +26,7 @@ export default function Podcast() {
       </Head>
       <Container
         fluid
-        className={`section ${styles.section} ${styles.season2}`}
+        className={`section ${styles.section} ${styles.heading}`}
       >
         <Container className="inner-section">
           <Pulse>
@@ -36,56 +35,6 @@ export default function Podcast() {
               <div>The Podcast</div>
             </h1>
           </Pulse>
-          <h2 className={styles.seasonTitle}>Stagione 2</h2>
-          <div className={styles.player}>
-            <a
-              class="spreaker-player"
-              href="https://www.spreaker.com/show/eduway-the-podcast"
-              data-resource="show_id=4617700"
-              data-width="100%"
-              data-height="400px"
-              data-theme="light"
-              data-playlist="show"
-              data-playlist-continuous="true"
-              data-autoplay="false"
-              data-live-autoplay="false"
-              data-chapters-image="false"
-              data-episode-image-position="right"
-              data-hide-logo="false"
-              data-hide-likes="false"
-              data-hide-comments="false"
-              data-hide-sharing="false"
-              data-hide-download="true"
-            ></a>
-          </div>
-
-          <div className={styles.platformsRow}>
-            <a
-              href="https://open.spotify.com/show/0YVXCXiDZL6X5eJfff2Pdi?si=REXuIRcAQ0WFPLoQiRuyLw"
-              target="_blank"
-            >
-              <Button variant="outline-light">
-                <i class="fab fa-spotify"></i>
-              </Button>
-            </a>
-            <SpreakerButton />
-            <a
-              href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
-              target="_blank"
-            >
-              <Button variant="outline-light">
-                <i class="fab fa-google"></i>
-              </Button>
-            </a>
-            <a
-              href="https://podcasts.apple.com/us/podcast/eduway-the-podcast/id1542016656?uo=4"
-              target="_blank"
-            >
-              <Button variant="outline-light">
-                <i class="fab fa-itunes-note"></i>
-              </Button>
-            </a>
-          </div>
         </Container>
         {/* Bottom tilted header */}
         <svg
@@ -99,10 +48,9 @@ export default function Podcast() {
       </Container>
       <Container
         fluid
-        className={`section ${styles.section} ${styles.season1}`}
+        className={`section ${styles.section} ${styles.podcast}`}
       >
         <Container className="inner-section">
-          <h2 className={styles.seasonTitle}>Stagione 1</h2>
           <div className={styles.player}>
             <a
               class="spreaker-player"
@@ -124,33 +72,7 @@ export default function Podcast() {
               data-hide-download="true"
             ></a>
           </div>
-          <div className={styles.platformsRow}>
-            <a
-              href="https://open.spotify.com/show/0YVXCXiDZL6X5eJfff2Pdi?si=REXuIRcAQ0WFPLoQiRuyLw"
-              target="_blank"
-            >
-              <Button className="bluenavy-button-outline">
-                <i class="fab fa-spotify"></i>
-              </Button>
-            </a>
-            <SpreakerButton bluenavy />
-            <a
-              href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
-              target="_blank"
-            >
-              <Button className="bluenavy-button-outline">
-                <i class="fab fa-google"></i>
-              </Button>
-            </a>
-            <a
-              href="https://podcasts.apple.com/us/podcast/eduway-the-podcast/id1542016656?uo=4"
-              target="_blank"
-            >
-              <Button className="bluenavy-button-outline">
-                <i class="fab fa-itunes-note"></i>
-              </Button>
-            </a>
-          </div>
+          <PodcastButtonsRow />
         </Container>
       </Container>
     </Layout>

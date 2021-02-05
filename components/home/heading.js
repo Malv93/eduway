@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import styles from "../../styles/home/heading.module.css";
 import Button from "react-bootstrap/Button";
 import Pulse from "react-reveal/Pulse";
+import Link from "next/link";
 
 export default function Heading() {
   return (
@@ -17,19 +18,25 @@ export default function Heading() {
             Podcast e l'empatia di un team giovane al servizio dei giovani.
           </h3>
           <div className={styles.buttonsBox}>
-            <a href="/podcast">
+            <Link href="/podcast">
               <Button
                 variant="warning"
                 className={`button-font ${styles.button}`}
               >
-                <i class="fas fa-podcast"></i> Ascolta il Podcast
+                <svg className="icon icon-podcast">
+                  <use xlinkHref="/images/icons/sprite.svg#icon-podcast"></use>
+                </svg>
+                Ascolta il Podcast
               </Button>
-            </a>
-            <a href="/#contact-form">
+            </Link>
+            <Link href="/#contact-form">
               <Button className={`greylightblue-button ${styles.button}`}>
-                <i class="far fa-envelope"></i> Contattaci
+                <svg className="icon icon-email">
+                  <use xlinkHref="/images/icons/sprite.svg#icon-email"></use>
+                </svg>{" "}
+                Contattaci
               </Button>
-            </a>
+            </Link>
           </div>
         </Pulse>
       </Container>

@@ -5,7 +5,8 @@ import FeatureCard from "../cards/featureCard";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
-import SpreakerButton from "../buttons/spreakerButton";
+import Link from "next/link";
+import PodcastButtonsRow from "../buttons/podcastButtonsRow";
 
 export default function Activities() {
   return (
@@ -32,41 +33,18 @@ export default function Activities() {
                   Puoi ascoltare il podcast sul nostro sito o sulla tua
                   piattaforma preferita.
                 </p>
-                <a href="/podcast">
+                <Link href="/podcast">
                   <Button
                     variant="warning"
                     className={`button-font ${styles.activityPodcastButton}`}
                   >
-                    <i class="fas fa-podcast"></i> Ascolta il Podcast
+                    <svg className="icon icon-podcast">
+                      <use xlinkHref="/images/icons/sprite.svg#icon-podcast"></use>
+                    </svg>
+                    Ascolta il Podcast
                   </Button>
-                </a>
-                <div className={styles.podcastPlatformsRow}>
-                  <a
-                    href="https://open.spotify.com/show/0YVXCXiDZL6X5eJfff2Pdi?si=REXuIRcAQ0WFPLoQiRuyLw"
-                    target="_blank"
-                  >
-                    <Button className="bluenavy-button-outline">
-                      <i class="fab fa-spotify"></i>
-                    </Button>
-                  </a>
-                  <SpreakerButton bluenavy />
-                  <a
-                    href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNDYxNzcwMC9lcGlzb2Rlcy9mZWVk"
-                    target="_blank"
-                  >
-                    <Button className="bluenavy-button-outline">
-                      <i class="fab fa-google"></i>
-                    </Button>
-                  </a>
-                  <a
-                    href="https://podcasts.apple.com/us/podcast/eduway-the-podcast/id1542016656?uo=4"
-                    target="_blank"
-                  >
-                    <Button className="bluenavy-button-outline">
-                      <i class="fab fa-itunes-note"></i>
-                    </Button>
-                  </a>
-                </div>
+                </Link>
+                <PodcastButtonsRow />
               </div>
             </Fade>
           </Col>
@@ -85,11 +63,14 @@ export default function Activities() {
                   Attività di Accompagnamento Pedagogico presso comunità della
                   provincia di Cremona e collaborazione con F.O.C.r.
                 </p>
-                <a href="/#contact-form">
+                <Link href="/#contact-form">
                   <Button className="greylightblue-button">
-                    <i class="far fa-envelope"></i> Contattaci
+                    <svg className="icon icon-email">
+                      <use xlinkHref="/images/icons/sprite.svg#icon-email"></use>
+                    </svg>{" "}
+                    Contattaci
                   </Button>
-                </a>
+                </Link>
               </div>
             </Fade>
           </Col>

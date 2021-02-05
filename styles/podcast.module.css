@@ -1,34 +1,25 @@
 /* Podcast page styles */
 .section {
   padding-top: 40px;
-  padding-bottom: 100px;
 }
-.season2 {
+.heading {
   color: #fff;
   background-color: var(--primary-color);
   padding-bottom: 140px;
 }
 @media (min-width: 768px) {
-  .season2 {
-    padding-bottom: 240px;
+  .heading {
+    padding-bottom: 180px;
   }
 }
 
-.seasonTitle {
-  margin-bottom: 40px;
+.podcast {
+  position: relative;
+  top: -140px;
 }
 
 .player {
   box-shadow: 5px 5px 15px 2px #222;
   background-color: #fff; /*bottom of the player looks transparent*/
-}
-
-.platformsRow {
-  margin: 30px auto 0;
-  max-width: 240px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: relative;
-  z-index: 10; /*always keeps button on top of lower tilted svg*/
+  margin-bottom: 40px;
 }

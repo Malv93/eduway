@@ -7,39 +7,55 @@ export default function Footer() {
       <Container fluid className="inner-section">
         <h4>Contatti</h4>
         <p>
-          <i class="far fa-envelope"></i> info@eduwayimpresasociale.com
+          <svg className="icon icon-email">
+            <use xlinkHref="/images/icons/sprite.svg#icon-email"></use>
+          </svg>{" "}
+          info@eduwayimpresasociale.com
         </p>
         <p>
-          <i class="fas fa-phone"></i> 0123456789
+          <svg className="icon icon-call">
+            <use xlinkHref="/images/icons/sprite.svg#icon-call"></use>
+          </svg>{" "}
+          0123456789
         </p>
         <hr className={styles.horizontalRow} />
         <div className={styles.socialRow}>
           <a href="https://twitter.com/Eduway_" target="_blank">
-            <i className="fab fa-twitter"></i>
+            <svg className="icon icon-social">
+              <use xlinkHref="/images/icons/sprite.svg#icon-twitter"></use>
+            </svg>
           </a>
           <a
             href="https://www.linkedin.com/company/eduway-the-podcast"
             target="_blank"
           >
-            <i className="fab fa-linkedin-in"></i>
+            <svg className="icon icon-social">
+              <use xlinkHref="/images/icons/sprite.svg#icon-linkedin"></use>
+            </svg>
           </a>
           <a
             href="https://www.facebook.com/Eduway.educationistheway"
             target="_blank"
           >
-            <i className="fab fa-facebook-f"></i>
+            <svg className="icon icon-social">
+              <use xlinkHref="/images/icons/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
           <a
             href="https://www.instagram.com/eduway_impresasociale/"
             target="_blank"
           >
-            <i class="fab fa-instagram"></i>
+            <svg className="icon icon-social">
+              <use xlinkHref="/images/icons/sprite.svg#icon-instagram"></use>
+            </svg>
           </a>
           <a
             href="https://www.youtube.com/channel/UCNHRs8xJFiI31SpQlo7iiZA/"
             target="_blank"
           >
-            <i className="fab fa-youtube"></i>
+            <svg className="icon icon-social">
+              <use xlinkHref="/images/icons/sprite.svg#icon-youtube"></use>
+            </svg>
           </a>
         </div>
         <p
