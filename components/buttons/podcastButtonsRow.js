@@ -10,6 +10,7 @@ export default function PodcastButtonsRow() {
       >
         <Button className="bluenavy-button-outline">
           <svg className="icon icon-spotify">
+            <title>Spotify Podcast</title>
             <use xlinkHref="/images/icons/sprite.svg#icon-spotify"></use>
           </svg>
         </Button>
@@ -20,6 +21,7 @@ export default function PodcastButtonsRow() {
       >
         <Button className="bluenavy-button-outline">
           <svg className="icon icon-spreaker">
+            <title>Spreaker Podcast</title>
             <use xlinkHref="/images/icons/sprite.svg#icon-spreaker"></use>
           </svg>
         </Button>
@@ -31,6 +33,7 @@ export default function PodcastButtonsRow() {
       >
         <Button className="bluenavy-button-outline">
           <svg className="icon icon-googlepodcast">
+            <title>Google Podcast</title>
             <use xlinkHref="/images/icons/sprite.svg#icon-googlepodcast"></use>
           </svg>
         </Button>
@@ -41,6 +44,7 @@ export default function PodcastButtonsRow() {
       >
         <Button className="bluenavy-button-outline">
           <svg className="icon icon-itunes">
+            <title>Apple Podcast</title>
             <use xlinkHref="/images/icons/sprite.svg#icon-itunes"></use>
           </svg>
         </Button>

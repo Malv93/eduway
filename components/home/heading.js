@@ -24,6 +24,7 @@ export default function Heading() {
                 className={`button-font ${styles.button}`}
               >
                 <svg className="icon icon-podcast">
+                  <title>Play Podcast</title>
                   <use xlinkHref="/images/icons/sprite.svg#icon-podcast"></use>
                 </svg>
                 Ascolta il Podcast
@@ -32,6 +33,7 @@ export default function Heading() {
             <Link href="/#contact-form">
               <Button className={`greylightblue-button ${styles.button}`}>
                 <svg className="icon icon-email">
+                  <title>Email Contact</title>
                   <use xlinkHref="/images/icons/sprite.svg#icon-email"></use>
                 </svg>{" "}
                 Contattaci

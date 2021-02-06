@@ -28,6 +28,7 @@ export default function Header() {
           <Link href="/podcast">
             <Button variant="outline-warning" className={styles.podcastLeft}>
               <svg className="icon icon-podcast">
+                <title>Play Podcast</title>
                 <use xlinkHref="/images/icons/sprite.svg#icon-podcast"></use>
               </svg>
               <span>Podcast</span>
@@ -55,6 +56,7 @@ export default function Header() {
           <Link href="/podcast">
             <Button variant="outline-warning" className={styles.podcastRight}>
               <svg className="icon icon-podcast">
+                <title>Play Podcast</title>
                 <use xlinkHref="/images/icons/sprite.svg#icon-podcast"></use>
               </svg>
               <span>Podcast</span>

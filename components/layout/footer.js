@@ -8,12 +8,14 @@ export default function Footer() {
         <h4>Contatti</h4>
         <p>
           <svg className="icon icon-email">
+            <title>Email Contact</title>
             <use xlinkHref="/images/icons/sprite.svg#icon-email"></use>
           </svg>{" "}
           info@eduwayimpresasociale.com
         </p>
         <p>
           <svg className="icon icon-call">
+            <title>Phone Contact</title>
             <use xlinkHref="/images/icons/sprite.svg#icon-call"></use>
           </svg>{" "}
           0123456789
@@ -22,6 +24,7 @@ export default function Footer() {
         <div className={styles.socialRow}>
           <a href="https://twitter.com/Eduway_" target="_blank">
             <svg className="icon icon-social">
+              <title>Twitter Link</title>
               <use xlinkHref="/images/icons/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
@@ -30,6 +33,7 @@ export default function Footer() {
             target="_blank"
           >
             <svg className="icon icon-social">
+              <title>Linkedin Link</title>
               <use xlinkHref="/images/icons/sprite.svg#icon-linkedin"></use>
             </svg>
           </a>
@@ -38,6 +42,7 @@ export default function Footer() {
             target="_blank"
           >
             <svg className="icon icon-social">
+              <title>Facebook link</title>
               <use xlinkHref="/images/icons/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
@@ -46,6 +51,7 @@ export default function Footer() {
             target="_blank"
           >
             <svg className="icon icon-social">
+              <title>Instagram Link</title>
               <use xlinkHref="/images/icons/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
@@ -54,6 +60,7 @@ export default function Footer() {
             target="_blank"
           >
             <svg className="icon icon-social">
+              <title>Youtube Link</title>
               <use xlinkHref="/images/icons/sprite.svg#icon-youtube"></use>
             </svg>
           </a>

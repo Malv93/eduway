@@ -14,6 +14,7 @@ export default function Action() {
           <Link href="/podcast">
             <Button variant="warning" block className={styles.podcastButton}>
               <svg className="icon icon-podcast">
+                <title>Play Podcast</title>
                 <use xlinkHref="/images/icons/sprite.svg#icon-podcast"></use>
               </svg>
               Ascolta il Podcast
