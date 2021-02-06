@@ -11,6 +11,11 @@
   font-weight: 500;
   margin-bottom: 60px;
 }
+.buttonsBox {
+  /*Always stays on top of svg tilted header*/
+  position: relative;
+  z-index: 10;
+}
 
 .button {
   margin-bottom: 20px;
