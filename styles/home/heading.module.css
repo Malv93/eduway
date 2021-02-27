@@ -6,13 +6,9 @@
   padding-bottom: 260px; /*padding for reveal animation*/
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 60px;
-}
 .buttonsBox {
   /*Always stays on top of svg tilted header*/
+  margin-top: 80px;
   position: relative;
   z-index: 10;
 }

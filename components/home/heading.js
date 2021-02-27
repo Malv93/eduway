@@ -13,10 +13,6 @@ export default function Heading() {
             <div>L'Educazione</div>è la Via<div></div>
           </h1>
 
-          <h3 className={styles.subtitle}>
-            Eduway offre la migliore esperienza Educativa: solide competenze,
-            Podcast e l'empatia di un team giovane al servizio dei giovani.
-          </h3>
           <div className={styles.buttonsBox}>
             <Link href="/podcast">
               <Button

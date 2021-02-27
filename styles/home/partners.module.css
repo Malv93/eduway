@@ -8,8 +8,11 @@
   margin-top: 60px;
   text-align: center;
 }
-.logo {
+.logoFocr {
   width: 120px;
+}
+.logoRB {
+  width: 150px;
 }
 
 .partnersTitle {

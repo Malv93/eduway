@@ -10,7 +10,6 @@ export default function Action() {
     <Container fluid id="action" className={`section ${styles.section}`}>
       <Container fluid className="inner-section">
         <Pulse>
-          <h2 className="section-title">Prova Eduway!</h2>
           <Link href="/podcast">
             <Button variant="warning" block className={styles.podcastButton}>
               <svg className="icon icon-podcast">

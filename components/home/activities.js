@@ -19,7 +19,7 @@ export default function Activities() {
               <div className={styles.activityCard}>
                 <div id="activities" className="position-link-id"></div>
                 <img
-                  src="images/activities/podcast.png"
+                  src="images/activities/podcast.jpg"
                   alt="Eduway The Podcast logo episodio"
                   className={`${styles.activityImage} ${styles.podcastImage}`}
                 />
@@ -58,7 +58,7 @@ export default function Activities() {
                   className={styles.activityImage}
                 />
                 <h3 className={styles.activityTitle}>
-                  Accompagnamento Pedagogico
+                  Formazione e Accompagnamento Pedagogico
                 </h3>
                 <p>
                   Attività di Accompagnamento Pedagogico presso comunità della
@@ -84,9 +84,9 @@ export default function Activities() {
             <Fade bottom>
               <FeatureCard
                 imageSource="images/features/microphone.svg"
-                imageAlt="Microfono"
-                title="Microfono"
-                description="Diffondiamo buone prassi educative con leggerezza e professionalità"
+                imageAlt="Podcast"
+                title="Podcast"
+                description="Raccontiamo l’educazione e diffondiamo buone prassi"
               />
             </Fade>
           </Col>
@@ -94,9 +94,9 @@ export default function Activities() {
             <Fade bottom>
               <FeatureCard
                 imageSource="images/features/people.svg"
-                imageAlt="Persone"
-                title="Persone"
-                description="Accompagniamo realtà educative partendo dai bisogni delle persone"
+                imageAlt="Formazione"
+                title="Formazione"
+                description="Accompagniamo e formiamo realtà educative partendo dai bisogni delle persone"
               />
             </Fade>
           </Col>
@@ -104,8 +104,8 @@ export default function Activities() {
             <Fade bottom>
               <FeatureCard
                 imageSource="images/features/web.svg"
-                imageAlt="Rete"
-                title="Rete"
+                imageAlt="Network"
+                title="Network"
                 description="Facciamo rete per aumentare il beneficio che portiamo nella realtà"
               />
             </Fade>
