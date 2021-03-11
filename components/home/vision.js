@@ -9,7 +9,10 @@ export default function Vision() {
         <Fade bottom>
           <div className={styles.missionBox}>
             <h2 className="section-title">Vision</h2>
-            <p>Migliorare il mondo con l'educazione</p>
+            <p>
+              Esserci per scomparire. <br />
+              Perché l'obiettivo dell'educazione è generare autonomia.
+            </p>
           </div>
         </Fade>
       </Container>

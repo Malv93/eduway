@@ -14,7 +14,7 @@
 .missionBox {
   position: relative;
   bottom: 6vw; /*Move up for larger screens*/
-  max-width: 360px;
+  max-width: 500px;
   margin: 0 auto;
   z-index: 1;
 }

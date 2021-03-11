@@ -9,7 +9,10 @@ export default function Mission() {
         <Fade bottom>
           <div className={styles.missionBox}>
             <h2 className="section-title">Mission</h2>
-            <p>Portare beneficio alle persone attraverso l’educazione</p>
+            <p>
+              Portiamo sviluppo a persone e comunità attraverso progetti
+              educativi che nascono dai loro bisogni e desideri.
+            </p>
           </div>
         </Fade>
       </Container>

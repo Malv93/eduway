@@ -12,8 +12,7 @@ const founders = [
     role: "Co-Founder",
     imageSource: "images/profiles/billy.jpg",
     imageAlt: "Foto profilo Andrea Dasti",
-    bio:
-      "Matthew Paige Damon, detto Matt (Cambridge, 8 ottobre 1970), è un attore, sceneggiatore e produttore cinematografico statunitense.",
+    bio: "Educatore professionale e progettista sociale.",
   },
   {
     id: 2,
@@ -21,38 +20,26 @@ const founders = [
     role: "Co-Founder",
     imageSource: "images/profiles/stefano.jpg",
     imageAlt: "Foto profilo Stefano Lepre",
-    bio:
-      "Leonardo Wilhelm DiCaprio (Los Angeles, 11 novembre 1974) è un attore, produttore cinematografico e attivista statunitense. ",
+    bio: "Educatore professionale.",
   },
 ];
 
 const collaborators = [
   {
     id: 1,
-    name: "Emanuele Bergami",
-    role: "Formatore",
-    imageSource: "images/profiles/emanuele.jpg",
-    imageAlt: "Foto profilo Emanuele Bergami",
-    bio:
-      "Brad Pitt, all'anagrafe William Bradley Pitt (Shawnee, 18 dicembre 1963), è un attore e produttore cinematografico statunitense.",
-  },
-  {
-    id: 2,
     name: "Heidi Corti",
     role: "Responsabile Grafica",
     imageSource: "images/profiles/heidi.jpg",
     imageAlt: "Foto profilo Heidi Corti",
-    bio:
-      "Gwyneth Kate Paltrow (Los Angeles, 27 settembre 1972) è un'attrice, cantante e imprenditrice statunitense.",
+    bio: "Progetta e realizza i contenuti grafici di Eduway.",
   },
   {
-    id: 3,
+    id: 2,
     name: "Marco Malvicini",
     role: "Responsabile IT",
     imageSource: "images/profiles/marco.jpg",
     imageAlt: "Foto profilo Marco Malvicini",
-    bio:
-      "Ryan Thomas Gosling (London, 12 novembre 1980) è un attore, regista, sceneggiatore, produttore cinematografico, cantante e musicista canadese.",
+    bio: "Gestisce il sito internet di Eduway.",
   },
 ];
 
@@ -65,13 +52,14 @@ export default function About() {
           <div id="about" className="position-link-id"></div>
           <div className={styles.eduwayBio}>
             <p>
-              Eduway nasce in una fredda sera invernale, dall'incontro fortuito
-              in un bar di Crema tra Andrea Dasti e Stefano Lepre, due amici che
-              vogliono affrontare le sfide dell'educazione. Eduway si propone di
-              fare questo e quello... in modo da ottenere questo e quello...
-              facendo attenzione a quello e quell'altro... con l'obiettivo di
-              crescere ed espandere le sue attività dedicandosi a nuove sfide e
-              progetti importanti per la comunità.{" "}
+              Eduway è un’impresa sociale attiva nel campo dei processi
+              educativi e formativi. Lavoriamo a fianco delle comunità
+              promuovendo percorsi di accompagnamento pedagogico e formazione,
+              per aumentare la capacità delle persone di portare beneficio alla
+              comunità stessa. Accanto all’attività di educatori e formatori,
+              diffondiamo buone prassi, raccontando l’educazione con
+              professionalità e leggerezza nel nostro podcast “Eduway the
+              Podcast”.
             </p>
           </div>
         </Fade>
@@ -103,7 +91,7 @@ export default function About() {
         <Row className={styles.collaboratorsSection}>
           {collaborators.map((collaborator) => {
             return (
-              <Col lg={4} key={collaborator.id}>
+              <Col lg={6} key={collaborator.id}>
                 <Fade bottom>
                   <div className={styles.profileBox}>
                     <FlipCard

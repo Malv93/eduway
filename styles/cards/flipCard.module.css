@@ -71,12 +71,15 @@
   height: 100%;
   border-radius: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .profileBio.founder {
   padding: 32px 22px;
-  font-size: 0.6rem; /*Scaled up by transform scale*/
+  font-size: 0.9rem; /*Scaled up by transform scale*/
 }
 .profileBio.collaborator {
   padding: 20px 14px;
-  font-size: 0.4rem; /*Scaled up by transform scale*/
+  font-size: 0.6rem; /*Scaled up by transform scale*/
 }
