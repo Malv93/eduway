@@ -7,7 +7,7 @@
   position: relative;
   bottom: 100px;
   max-width: 360px;
-  height: 610px; /*hard coded fixed size for all cards*/
+  height: 640px; /*hard coded fixed size for all cards*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
